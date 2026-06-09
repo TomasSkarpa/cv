@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tomáš Škarpa CV">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tomáš Škarpa">
   <rect width="32" height="32" rx="7" fill="#f7f7f5"/>
-  <rect x="8" y="4" width="16" height="24" rx="2" fill="#ffffff" stroke="#0a0a0a" stroke-width="1.75"/>
-  <rect x="11.5" y="9.5" width="9" height="2" rx="1" fill="#0a0a0a"/>
-  <rect x="11.5" y="14" width="9" height="1.5" rx="0.75" fill="#5c5c5c"/>
-  <rect x="11.5" y="17.5" width="9" height="1.5" rx="0.75" fill="#5c5c5c"/>
-  <rect x="11.5" y="21" width="6" height="1.5" rx="0.75" fill="#5c5c5c"/>
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5" fill="#ffffff" stroke="#0a0a0a" stroke-width="2.25"/>
+  <text
+    x="16"
+    y="22"
+    text-anchor="middle"
+    font-family="ui-monospace, 'SF Mono', 'Cascadia Code', monospace"
+    font-size="16"
+    font-weight="700"
+    fill="#0a0a0a"
+    letter-spacing="-0.5"
+  >TŠ</text>
 </svg>
