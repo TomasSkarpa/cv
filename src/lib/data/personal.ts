@@ -72,8 +72,8 @@ export const personal = {
   },
   collaboration: {
     title: 'Collaboration',
-    body: 'I am open to **freelance work, collaborations**, and new opportunities where technical depth meets clear product goals. I work best with teams that respect **direct feedback and shared ownership**.',
-    cta: { label: 'Message on LinkedIn', href: site.linkedinUrl },
+    body: 'I am open to **freelance work, collaborations**, and new opportunities where technical depth meets clear product goals. I work best with teams that respect **direct feedback and shared ownership**. **Message me**, or reach out via:',
+    cta: { label: 'LinkedIn', href: site.linkedinUrl },
   },
   continueReading: [
     { label: 'Professional approach', href: '/professional' },

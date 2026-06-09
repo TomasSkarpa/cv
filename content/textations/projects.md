@@ -64,17 +64,15 @@ Python · Flask · Google Gemini AI · HTML · QR codes · ImgBB
 
 ## Client delivery (TAOX s.r.o.)
 
-Seven sites shipped during part-time front-end role (May 2022 – Jul 2023). Laravel, PHP, Bootstrap.
+Six sites shipped during part-time front-end role (May 2022 – Jul 2023). Laravel, PHP, Bootstrap.
 
-Front-end developer on agency client work: Laravel Blade from design to production, plus legacy PHP maintenance. Editorial, hospitality, coaching, B2B services, and e-commerce sites all went live.
+Front-end developer on agency client work: Laravel Blade from design to production, plus legacy PHP maintenance. Editorial, hospitality, B2B services, and e-commerce sites all went live.
 
 ### Shipped client sites
 
-VENKU — Outdoor sport magazine — venku.cz
+VENKU — Outdoor sport magazine — venku.online
 
 Lázeňská káva — Café network portal — kavarny.lazenskakava.cz
-
-networks.coach — Coaching & networking
 
 metrologie.cz — Metrology services (B2B)
 

@@ -99,6 +99,6 @@ export const bataEvents = {
 } as const;
 
 export const openToConversations = {
-  text: '**Freelance, collaborations**, or a role where **commerce engineering** is the actual job. **LinkedIn message** is the fastest way to reach me.',
-  cta: { label: 'Message on LinkedIn', href: site.linkedinUrl },
+  text: '**Freelance, collaborations**, or a role where **commerce engineering** is the actual job. **Message me**, or reach out via:',
+  cta: { label: 'LinkedIn', href: site.linkedinUrl },
 } as const;

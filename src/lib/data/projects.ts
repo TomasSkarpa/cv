@@ -67,14 +67,13 @@ export const projects = {
   clientDelivery: {
     title: 'Client delivery (TAOX s.r.o.)',
     intro:
-      '**Seven sites** shipped during part-time front-end role (May 2022 – Jul 2023). **Laravel, PHP, Bootstrap**.',
+      '**Six sites** shipped during part-time front-end role (May 2022 – Jul 2023). **Laravel, PHP, Bootstrap**.',
     summary:
-      '**Front-end developer** on agency client work: **Laravel Blade** from design to production, plus legacy **PHP** maintenance. Editorial, hospitality, coaching, **B2B services**, and **e-commerce** sites all went live.',
+      '**Front-end developer** on agency client work: **Laravel Blade** from design to production, plus legacy **PHP** maintenance. Editorial, hospitality, **B2B services**, and **e-commerce** sites all went live.',
     stack: ['Laravel', 'PHP', 'Bootstrap', 'HTML/CSS', 'jQuery'],
     sites: [
-      { title: 'VENKU', subtitle: 'Outdoor sport magazine', url: 'https://venku.cz' },
+      { title: 'VENKU', subtitle: 'Outdoor sport magazine', url: 'https://venku.online' },
       { title: 'Lázeňská káva', subtitle: 'Café network portal', url: 'https://kavarny.lazenskakava.cz' },
-      { title: 'networks.coach', subtitle: 'Coaching & networking', url: 'https://networks.coach' },
       { title: 'metrologie.cz', subtitle: 'Metrology services (B2B)', url: 'https://metrologie.cz' },
       { title: 'GSP Zborovice', subtitle: 'Industrial corporate site', url: 'https://gspzborovice.cz' },
       { title: 'Pilové kotouče', subtitle: 'Industrial e-commerce', url: 'https://pilove-kotouce.cz' },

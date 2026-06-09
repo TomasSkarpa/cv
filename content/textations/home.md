@@ -66,6 +66,6 @@ GitHub: github.com/TomasSkarpa/batamdc-figurine-generation
 
 ## Get in touch
 
-Freelance, collaborations, or a role where commerce engineering is the actual job. LinkedIn message is the fastest way to reach me.
+Freelance, collaborations, or a role where commerce engineering is the actual job. Message me, or reach out via:
 
-Message on LinkedIn
+LinkedIn
