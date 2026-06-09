@@ -48,7 +48,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/tommii.s/',
+    href: 'https://www.instagram.com/tomascarpone/',
     network: 'instagram',
   },
   {

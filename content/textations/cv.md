@@ -4,169 +4,85 @@ Tech Lead · Zlín, Czech Republic
 
 ## Summary
 
-Tech Lead specializing in improving delivery processes within e-commerce platforms. Experienced in building scalable online retail systems and enhancing user experience. I love owning solutions and providing guidance to colleagues.
+Tech Lead at Bata Group in Zlín. I run Salesforce B2C Commerce Cloud delivery: storefronts, integrations, and release practices on the global platform.
 
-Tech lead at Bata Group, based in Zlín, leading Salesforce B2C Commerce Cloud delivery on the global digital platform. Progression from IT help desk through software engineer to tech lead within the same organization. Full-stack background from TAOX and earlier internships. Focused on reliable releases, clear handoffs, Scrum practices, and extending platform capabilities to match business needs.
-
-In my free time, I build apps for fun and ease of use.
+Help desk to tech lead in three years at the same company. TAOX and internships before that. Still hands-on, still focused on clear handoffs and docs. Side projects for fun.
 
 ## Experience
 
 ### Bata Group
 
-Full-time · 3 yrs 1 mo
+Full-time · 3 yrs 1 mo · Zlín · Hybrid
 
-#### Tech Lead
+#### Tech Lead · Apr 2026 – Present
 
-Apr 2026 – Present
+- Technical direction for ecommerce and integrations; hands-on on the hard calls.
+- Reviewing and guiding daily technical decisions; mentoring developers on delivery and platform patterns.
+- Delivery process, docs standards, Scrum, and deployment automation.
+- MuleSoft/SFCC monitoring repo with AI-assisted docs so engineers and QA parse flows faster.
 
-Zlín, Zlín, Czechia · Hybrid
+#### Software Engineer · Jan 2024 – Apr 2026 · 2 yrs 4 mos
 
-Leading the technical direction of the ecommerce platform and its surrounding integrations.
+- Multichannel Development Centre: server and client SFCC, middleware, and email templating in production.
+- Full stack SFCC, middleware, AWS Lambda; Python/Robot e2e automation; onboarding colleagues.
+- Bata Kenya: first presentational site on the new SFCC platform; reusable pattern for regional rollouts.
+- ESP repository for versioned email configuration and templating.
 
-Reviewing, guiding, and being the go-to for difficult technical decisions the team faces daily, while remaining hands-on with development.
+#### IT Help Desk · Jun 2023 – Jan 2024 · 8 mos
 
-Shaping team operations: defining delivery and operational processes, establishing documentation standards, maintaining strict Scrum practices, and identifying opportunities for automation.
+- L1/L2 support, account setup, internal docs; bridge into the engineering team.
 
-Guides developers on deployable ESP configuration patterns, building on the repository and deployment setup created for Bata's email platform.
+### Dům dětí a mládeže Bojkovice
 
-Created a repository with monitoring guidance and AI-assisted analysis, bridging the gap in understanding MuleSoft and SFCC flows that were hard to parse. Engineers and QA benefited as everyone grew their understanding of these implementations faster through the tool.
+Part-time · English instructor · Bojkovice
 
-Skills: Engineering Leadership, DevOps, and related areas.
+#### English Language Instructor · Feb 2023 – Jun 2024
 
-#### Software Engineer
+- One-on-one and group English instruction for youth learners; adapted curriculum and delivery to age, proficiency, and classroom dynamics.
 
-Jan 2024 – Apr 2026 · 2 yrs 4 mos
+### TAOX s.r.o.
 
-Zlín, Zlín, Czechia · Hybrid
+Part-time · Front-end · Luhačovice
 
-Worked in the Multichannel Development Centre, focusing on the full stack of the ecommerce platform.
+#### Frontend Developer · May 2022 – Jul 2023
 
-Development work included server-side and client-side on Salesforce B2C Commerce Cloud, middleware, and AWS Lambda integrations.
+- First commercial launches on Laravel/Blade; maintained legacy PHP 5 sites.
 
-Handled e2e automation, primarily using Python and Robot Framework.
+### ANYTHING STUDIO s.r.o.
 
-Responsible for onboarding and guiding colleagues due to a wide remit and fast learning pace.
+Internship · Uherský Brod
 
-Delivered Bata Kenya, the first non-ecommerce site on Bata's new digital platform.
+#### Development Intern · Feb 2022 – Jun 2022
 
-Built Bata's ESP repository and deployment setup for versioned email configuration.
-
-Strong hands-on work in email templating and ESP platform configuration.
-
-Skills: Salesforce.com, Test-Driven Development, and related areas.
-
-#### Information Technology Help Desk
-
-Jun 2023 – Jan 2024 · 8 mos
-
-Started by handling L1/L2 requests and account setup across Salesforce, JIRA, Confluence, and other platforms connected to the ecommerce solution.
-
-Incorporated development work on the side where appropriate.
-
-Contributed to internal documentation to increase team self-sufficiency, which eventually led to a full-time transition into the engineering team.
-
-Skills: Templating, JIRA, and related areas.
-
-### English Language Instructor
-
-Dům dětí a mládeže Bojkovice
-
-Part-time · Feb 2023 – Jun 2024 · 1 yr 5 mos
-
-Bojkovice, Zlín, Czechia · On-site
-
-Taught English on the side while working full-time, running both one-on-one tutoring sessions for younger kids and group conversation courses for elementary and high school students.
-
-Getting the same material to land for different age groups and skill levels turned out to be decent practice in reading a room and adjusting on the fly, something that carries over more than you'd expect.
-
-Skills: Teaching English as a Foreign Language, Classroom Instruction.
-
-### Frontend Developer
-
-TAOX s.r.o.
-
-Part-time · May 2022 – Jul 2023 · 1 yr 3 mos
-
-Luhačovice, Zlín, Czechia · On-site
-
-During my time at TAOX, I gained my first commercial experience by launching multiple website projects into production. I worked extensively with Laravel, especially Laravel Blade templates and styling. I was also responsible for maintaining older websites that were running on outdated PHP 5 versions.
-
-Skills: Front-end Coding, Laravel.
-
-### Development Intern
-
-ANYTHING STUDIO s.r.o.
-
-Internship · Feb 2022 – Jun 2022 · 5 mos
-
-Uherský Brod, Zlín, Czechia · Hybrid
-
-First proper dev internship, got my hands dirty with the Nette framework by digging through an existing codebase and figuring out how things fit together.
-
-Skills: Nette, macOS.
+- Nette codebase exploration; first proper dev internship.
 
 ## Volunteering
 
-### Bata Children's Program
+### Bata Children's Program · Jul 2023 – Present
 
-Bata Group · Jul 2023 – Present · 3 yrs
+Children's Program volunteer: LOT figurine booth (Gemini AI), Zlín Film Festival stand coordination, and broader event organization.
 
-Initially volunteer for the Bata Children's Program. Later started helping with organization of Children Program events for Bata.
+## Certifications
 
-Covered operational organization of the Baťa stand at Zlín Film Festival 2025. Returned for the 2026 festival with the Baťa stand and a half-marathon run.
+Professional Scrum Developer I — Scrum.org · 2025
 
-Connected tech work: Bata Figurine Generation app for Leaders of Tomorrow LOT Conference 2025 (Prague).
+Cybersecurity Essentials — Cisco Networking Academy · 2021
 
-## Licenses & certifications
-
-### Professional Scrum Developer I
-
-Scrum.org · Issued Dec 2025
-
-Credential ID: 1282044
-
-Skills: Scrum, Agile Methodologies.
-
-### Cybersecurity Essentials
-
-Cisco Networking Academy · Issued Feb 2021
-
-Credential ID: 907e1d3a-4ebe-4e0b-b66a-3299c812c355
-
-Skills: Cybersecurity, Network Security.
-
-### CCNA R&S: Introduction to Networks
-
-Cisco Networking Academy · Issued Jun 2019
-
-Credential ID: 4ffffff7-6a9a-4105-8eac-14fb477b85fe
-
-Skills: Computer Networking, Networking Fundamentals.
+CCNA R&S: Introduction to Networks — Cisco Networking Academy · 2019
 
 ## Core skills
 
-Full-Stack Development
+Full-Stack Development · Continuous Process Improvement · Communication
 
-Continuous Process Improvement
+Frontend: JavaScript · React · Next.js · TypeScript · Svelte · Tailwind · Sass
 
-Communication
+Backend & cloud: Node.js · PHP · Laravel · Python · Go · AWS · Docker · Ansible
 
-JavaScript · React · Next.js · TypeScript
+Commerce & delivery: Salesforce B2C Commerce Cloud · SFCC integrations · DevOps · Scrum
 
-Node.js · Laravel · PHP · Go · Python
+Quality and testing: Postman · Robot Framework · GitHub Actions
 
-Salesforce B2C Commerce Cloud
-
-Tailwind CSS · Sass · Bootstrap
-
-Docker · GitHub Actions · Ansible · AWS
-
-Postman · Robot Framework
-
-Engineering Leadership · DevOps · Scrum
-
-Full LinkedIn skills list with endorsements on the Skills page. Technology overview on the Stack page.
+Full list on Skills; tools and areas on Stack.
 
 ## Contact
 

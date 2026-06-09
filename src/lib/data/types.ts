@@ -59,6 +59,20 @@ export interface ProjectEntry {
   topics?: string[];
 }
 
+export interface ClientDeliverySite {
+  title: string;
+  subtitle: string;
+  url?: string;
+}
+
+export interface ClientDeliveryGroup {
+  title: string;
+  intro: string;
+  summary: string;
+  stack: string[];
+  sites: ClientDeliverySite[];
+}
+
 export interface Recommendation {
   name: string;
   title: string;

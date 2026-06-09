@@ -38,7 +38,7 @@ GitHub: github.com/TomasSkarpa
 
 X (Twitter): tomascarpone
 
-Instagram: @tommii.s
+Instagram: @tomascarpone
 
 Facebook: facebook.com/tomik.skarpa
 

@@ -64,95 +64,27 @@ Python · Flask · Google Gemini AI · HTML · QR codes · ImgBB
 
 ## Client delivery (TAOX s.r.o.)
 
-Website projects shipped during part-time frontend developer role (May 2022 – Jul 2023). Laravel, PHP, Bootstrap.
+Seven sites shipped during part-time front-end role (May 2022 – Jul 2023). Laravel, PHP, Bootstrap.
 
-### VENKU (venku.online / venku.cz)
+Front-end developer on agency client work: Laravel Blade from design to production, plus legacy PHP maintenance. Editorial, hospitality, coaching, B2B services, and e-commerce sites all went live.
 
-Online magazine
+### Shipped client sites
 
-Production editorial product connecting sport content with a growing outdoor community.
+VENKU — Outdoor sport magazine — venku.cz
 
-HTML5 · CSS · PHP 7.4 · Laravel 8.83 · Bootstrap 4
+Lázeňská káva — Café network portal — kavarny.lazenskakava.cz
 
-Role: Front-end developer
+networks.coach — Coaching & networking
 
-Context: Online magazine focused on cycling, outdoor sport, and an active lifestyle.
+metrologie.cz — Metrology services (B2B)
 
-Contribution: Developed front-end for a platform dedicated to outdoor activities and events, featuring articles, gear recommendations, and cycling tips.
+GSP Zborovice — Industrial corporate site — gspzborovice.cz
 
-### Lázeňská káva (kavarny.lazenskakava.cz)
+Pilové kotouče — Industrial e-commerce — pilove-kotouce.cz
 
-Portal · Café network
+Watthouse — Solar energy corporate site — watthouse.cz
 
-Unified digital entry point for a multi-location café network.
-
-HTML5 · PHP 7.4 · Laravel 8.83 · Bootstrap 4
-
-Role: Front-end developer
-
-Context: Regional café chain needed a portal to showcase locations and refresh their online presence.
-
-Contribution: Developed front-end for a portal showcasing café locations, enhancing the online presence of the café chain.
-
-### networks.coach
-
-Coaching & networking site
-
-Role: Front-end developer
-
-Contribution: Developed front-end for coaching and networking service site.
-
-### metrologie.cz
-
-Services website
-
-Clear service presentation for a technical B2B audience.
-
-HTML5 · CSS · PHP 7.4 · Laravel 8.83 · Bootstrap 4
-
-Role: Developer
-
-Context: Services site covering measurement equipment, calibration, and training offerings.
-
-Contribution: Contributed to development of a professional metrology services website offering measurement equipment, calibration, and training resources.
-
-### GSP Zborovice (gspzborovice.cz)
-
-Corporate website
-
-Production corporate site supporting brand and product discovery for an industrial B2B audience.
-
-HTML5 · PHP 7.4 · Laravel 8.83 · Bootstrap 4
-
-Role: Front-end developer
-
-Context: Manufacturer of saw blades and cutting tools needed a product and company presence online.
-
-Contribution: Contributed to development of a website for GSP Zborovice, a manufacturer specializing in saw blades and cutting tools.
-
-### Pilové kotouče (pilove-kotouce.cz)
-
-E-commerce
-
-Live B2B/B2C purchasing channel for a specialized industrial product line.
-
-HTML5 · PHP · Bootstrap · jQuery
-
-Role: Front-end developer
-
-Context: Online catalog and purchasing for saw blades and cutting tools.
-
-Contribution: Contributed to development of e-commerce site for saw blades and cutting tools, facilitating online product browsing and purchasing.
-
-### Watthouse (watthouse.cz)
-
-Corporate website · Solar energy
-
-Role: Front-end developer
-
-Contribution: Helped deploy and did development for Watthouse's website. Watthouse provides solar energy systems installation and maintenance, showcasing their portfolio and services.
-
-Skills: Front-end Coding, Laravel.
+Stack: Laravel · PHP · Bootstrap · HTML/CSS · jQuery
 
 ## Continue reading
 

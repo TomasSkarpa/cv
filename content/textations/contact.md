@@ -8,10 +8,6 @@ Email
 
 tskarpam8@gmail.com
 
-This site
-
-tomasskarpa.github.io/cv
-
 Source code
 
 github.com/TomasSkarpa/cv
@@ -26,4 +22,4 @@ github.com/TomasSkarpa
 
 Instagram
 
-@tommii.s
+@tomascarpone

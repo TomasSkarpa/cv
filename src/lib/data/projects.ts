@@ -1,4 +1,4 @@
-import type { ProjectEntry } from './types';
+import type { ClientDeliveryGroup, ProjectEntry } from './types';
 
 export const projects = {
   title: 'Projects',
@@ -67,87 +67,20 @@ export const projects = {
   clientDelivery: {
     title: 'Client delivery (TAOX s.r.o.)',
     intro:
-      'Website projects shipped during part-time frontend developer role (May 2022 – Jul 2023). **Laravel, PHP, Bootstrap**.',
-    items: [
-      {
-        title: 'VENKU (venku.online / venku.cz)',
-        category: 'Client delivery',
-        subtitle: 'Online magazine',
-        role: 'Front-end developer',
-        context: 'Online magazine focused on cycling, outdoor sport, and an active lifestyle.',
-        contribution:
-          'Developed front-end for a platform dedicated to outdoor activities and events, featuring articles, gear recommendations, and cycling tips.',
-        outcome: 'Production editorial product connecting sport content with a growing outdoor community.',
-        tags: ['HTML5', 'CSS', 'PHP 7.4', 'Laravel 8.83', 'Bootstrap 4'],
-      },
-      {
-        title: 'Lázeňská káva (kavarny.lazenskakava.cz)',
-        category: 'Client delivery',
-        subtitle: 'Portal · Café network',
-        role: 'Front-end developer',
-        context: 'Regional café chain needed a portal to showcase locations and refresh their online presence.',
-        contribution:
-          'Developed front-end for a portal showcasing café locations, enhancing the online presence of the café chain.',
-        outcome: 'Unified digital entry point for a multi-location café network.',
-        tags: ['HTML5', 'PHP 7.4', 'Laravel 8.83', 'Bootstrap 4'],
-      },
-      {
-        title: 'networks.coach',
-        category: 'Client delivery',
-        subtitle: 'Coaching & networking site',
-        role: 'Front-end developer',
-        context: 'Coaching and networking service site.',
-        contribution: 'Developed front-end for coaching and networking service site.',
-        outcome: 'Coaching and networking service site in production.',
-        tags: [],
-      },
-      {
-        title: 'metrologie.cz',
-        category: 'Client delivery',
-        subtitle: 'Services website',
-        role: 'Developer',
-        context: 'Services site covering measurement equipment, calibration, and training offerings.',
-        contribution:
-          'Contributed to development of a professional metrology services website offering measurement equipment, calibration, and training resources.',
-        outcome: 'Clear service presentation for a technical B2B audience.',
-        tags: ['HTML5', 'CSS', 'PHP 7.4', 'Laravel 8.83', 'Bootstrap 4'],
-      },
-      {
-        title: 'GSP Zborovice (gspzborovice.cz)',
-        category: 'Client delivery',
-        subtitle: 'Corporate website',
-        role: 'Front-end developer',
-        context: 'Manufacturer of saw blades and cutting tools needed a product and company presence online.',
-        contribution:
-          'Contributed to development of a website for GSP Zborovice, a manufacturer specializing in saw blades and cutting tools.',
-        outcome: 'Production corporate site supporting brand and product discovery for an industrial B2B audience.',
-        tags: ['HTML5', 'PHP 7.4', 'Laravel 8.83', 'Bootstrap 4'],
-      },
-      {
-        title: 'Pilové kotouče (pilove-kotouce.cz)',
-        category: 'Client delivery',
-        subtitle: 'E-commerce',
-        role: 'Front-end developer',
-        context: 'Online catalog and purchasing for saw blades and cutting tools.',
-        contribution:
-          'Contributed to development of e-commerce site for saw blades and cutting tools, facilitating online product browsing and purchasing.',
-        outcome: 'Live B2B/B2C purchasing channel for a specialized industrial product line.',
-        tags: ['HTML5', 'PHP', 'Bootstrap', 'jQuery'],
-      },
-      {
-        title: 'Watthouse (watthouse.cz)',
-        category: 'Client delivery',
-        subtitle: 'Corporate website · Solar energy',
-        role: 'Front-end developer',
-        context:
-          "Watthouse provides solar energy systems installation and maintenance, showcasing their portfolio and services.",
-        contribution:
-          "Helped deploy and did development for Watthouse's website.",
-        outcome: 'Corporate website showcasing solar energy systems installation and maintenance portfolio.',
-        tags: ['Front-end Coding', 'Laravel'],
-      },
-    ] satisfies ProjectEntry[],
-  },
+      '**Seven sites** shipped during part-time front-end role (May 2022 – Jul 2023). **Laravel, PHP, Bootstrap**.',
+    summary:
+      '**Front-end developer** on agency client work: **Laravel Blade** from design to production, plus legacy **PHP** maintenance. Editorial, hospitality, coaching, **B2B services**, and **e-commerce** sites all went live.',
+    stack: ['Laravel', 'PHP', 'Bootstrap', 'HTML/CSS', 'jQuery'],
+    sites: [
+      { title: 'VENKU', subtitle: 'Outdoor sport magazine', url: 'https://venku.cz' },
+      { title: 'Lázeňská káva', subtitle: 'Café network portal', url: 'https://kavarny.lazenskakava.cz' },
+      { title: 'networks.coach', subtitle: 'Coaching & networking', url: 'https://networks.coach' },
+      { title: 'metrologie.cz', subtitle: 'Metrology services (B2B)', url: 'https://metrologie.cz' },
+      { title: 'GSP Zborovice', subtitle: 'Industrial corporate site', url: 'https://gspzborovice.cz' },
+      { title: 'Pilové kotouče', subtitle: 'Industrial e-commerce', url: 'https://pilove-kotouce.cz' },
+      { title: 'Watthouse', subtitle: 'Solar energy corporate site', url: 'https://watthouse.cz' },
+    ],
+  } satisfies ClientDeliveryGroup,
   continueReading: [
     { label: 'Stack', href: '/stack' },
     { label: 'CV', href: '/cv' },
