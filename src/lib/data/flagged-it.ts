@@ -2,11 +2,11 @@ export const flaggedIt = {
   title: 'Flagged It',
   url: 'https://flaggedit.app/',
   githubUrl: 'https://github.com/TomasSkarpa/flagged-it',
-  tagline: 'Flagged It - Learn Countries Through Fun Guessing Games',
+  tagline: 'Flagged It - Learn Countries Through **Fun Guessing Games**',
   description: [
-    'Learn about countries playing different game modes: guessing games, flag recognition, shape identification, hangman, facts, and more.',
-    'Learn geography through interactive country games.',
-    'Web application built with Go backend and Svelte frontend.',
+    'Learn about countries playing different game modes: **guessing games, flag recognition, shape identification**, hangman, facts, and more.',
+    'Learn geography through **interactive country games**.',
+    'Web application built with **Go backend and Svelte frontend**.',
   ],
   gameModes: {
     title: 'Game modes',
@@ -30,7 +30,7 @@ export const flaggedIt = {
   },
   role: {
     title: 'Role',
-    body: 'Creator, maintainer, and full-stack developer. Ongoing feature work, deployment, and open-source maintenance.',
+    body: '**Creator, maintainer, and full-stack developer.** Ongoing feature work, deployment, and open-source maintenance.',
   },
   breadcrumb: { parent: 'Projects', parentHref: '/projects' },
   continueReading: [

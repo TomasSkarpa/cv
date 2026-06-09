@@ -32,7 +32,7 @@ GitHub pinned repos include flagged-it and hermes-notes.
 
 ### Homelab & automation
 
-Docker, Home Assistant, custom Lovelace cards, and scripted workflows. I treat personal infrastructure as a sandbox for orchestration and reliability patterns.
+Docker, Ansible, Home Assistant, custom Lovelace cards, and scripted workflows. I treat personal infrastructure as a sandbox for orchestration and reliability patterns.
 
 ### Game server hosting
 
@@ -44,7 +44,7 @@ Volleyball for several years with [Tělovýchovná jednota Bojkovice](https://ww
 
 Basketball in free time now. Also biking, swimming, and picking up a racket or paddle when someone suggests it: badminton, tennis, ping pong.
 
-Beer pong 🍺 — a social sport with generous latency tolerance. If the shot misses, the cup was definitely misaligned.
+Beer pong - a social sport with generous latency tolerance.
 
 Running occasionally, including partial company half-marathon runs at Baťa events such as Zlín Film Festival.
 
@@ -54,7 +54,7 @@ Running & outdoor events
 
 ### Downtime
 
-Time with my girlfriend.
+Quality time with my loved one 🍯
 
 Computer games, movies, TV shows, and anime.
 

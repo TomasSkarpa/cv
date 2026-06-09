@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { ProjectEntry } from '$lib/data/types';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import {
@@ -49,13 +50,13 @@
 	</CardHeader>
 	<CardContent class="flex-1 space-y-4 text-sm">
 		{#if project.description}
-			<p class="text-foreground/90">{project.description}</p>
+			<p class="text-foreground/90"><EmphasisText text={project.description} /></p>
 		{/if}
 		<div class="space-y-2">
-			<p><span class="font-medium">Role:</span> {project.role}</p>
-			<p><span class="font-medium">Context:</span> {project.context}</p>
-			<p><span class="font-medium">Contribution:</span> {project.contribution}</p>
-			<p><span class="font-medium">Outcome:</span> {project.outcome}</p>
+			<p><span class="font-medium">Role:</span> <EmphasisText text={project.role} /></p>
+			<p><span class="font-medium">Context:</span> <EmphasisText text={project.context} /></p>
+			<p><span class="font-medium">Contribution:</span> <EmphasisText text={project.contribution} /></p>
+			<p><span class="font-medium">Outcome:</span> <EmphasisText text={project.outcome} /></p>
 		</div>
 		<div class="flex flex-wrap gap-1.5">
 			{#each project.tags as tag}

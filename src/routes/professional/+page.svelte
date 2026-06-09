@@ -16,7 +16,7 @@
 
 	<div class="prose-width space-y-8">
 		{#each professional.intro as paragraph}
-			<p class="text-foreground/90 leading-relaxed">{paragraph}</p>
+			<p class="text-foreground/90 leading-relaxed"><EmphasisText text={paragraph} /></p>
 		{/each}
 
 		<section class="space-y-4">
@@ -37,7 +37,7 @@
 							<CardTitle class="text-base">{principle.title}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<p class="text-sm text-foreground/90">{principle.body}</p>
+							<p class="text-sm text-foreground/90"><EmphasisText text={principle.body} /></p>
 						</CardContent>
 					</Card>
 				{/each}
@@ -62,7 +62,7 @@
 							<CardTitle class="text-base">{step.title}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<p class="text-sm text-foreground/90">{step.body}</p>
+							<p class="text-sm text-foreground/90"><EmphasisText text={step.body} /></p>
 						</CardContent>
 					</Card>
 				{/each}

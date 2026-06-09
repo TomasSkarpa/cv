@@ -12,6 +12,7 @@
 	import { appHref } from '$lib/utils';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import {
 		Card,
@@ -35,8 +36,8 @@
 			<h1 class="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
 				{home.name}
 			</h1>
-			<p class="text-lg text-muted-foreground">{home.intro}</p>
-			<p class="text-base font-medium text-foreground/80">{home.tagline}</p>
+			<p class="text-lg text-muted-foreground"><EmphasisText text={home.intro} /></p>
+			<p class="text-base font-medium text-foreground/80"><EmphasisText text={home.tagline} /></p>
 			<div class="flex flex-wrap gap-3 pt-2">
 				<Button href={home.ctaPrimary.href}>{home.ctaPrimary.label}</Button>
 				<Button href={home.ctaSecondary.href} variant="outline">{home.ctaSecondary.label}</Button>
@@ -76,7 +77,7 @@
 	<section class="space-y-6">
 		<div class="space-y-2">
 			<h2 class="text-2xl font-semibold tracking-tight">Explore</h2>
-			<p class="text-muted-foreground">{exploreIntro}</p>
+			<p class="text-muted-foreground"><EmphasisText text={exploreIntro} /></p>
 		</div>
 		<div class="grid gap-4">
 			{#each exploreCards as card (card.href)}
@@ -86,7 +87,7 @@
 						<CardTitle>
 							<a href={appHref(card.href)} class="hover:underline">{card.title}</a>
 						</CardTitle>
-						<CardDescription>{card.description}</CardDescription>
+						<CardDescription><EmphasisText text={card.description} /></CardDescription>
 					</CardHeader>
 				</Card>
 			{/each}
@@ -112,7 +113,7 @@
 				</CardDescription>
 			</CardHeader>
 			<CardContent class="space-y-4">
-				<p class="text-sm text-foreground/90">{sideProject.description}</p>
+				<p class="text-sm text-foreground/90"><EmphasisText text={sideProject.description} /></p>
 				<Button href={sideProject.href} variant="secondary" size="sm">Project details</Button>
 			</CardContent>
 		</Card>
@@ -122,8 +123,8 @@
 				<CardTitle>Baťa events</CardTitle>
 			</CardHeader>
 			<CardContent class="space-y-4 text-sm text-foreground/90">
-				<p>{bataEvents.volunteering}</p>
-				<p>{bataEvents.lotConference}</p>
+				<p><EmphasisText text={bataEvents.volunteering} /></p>
+				<p><EmphasisText text={bataEvents.lotConference} /></p>
 				<div class="flex flex-wrap gap-2">
 					<Button href={bataEvents.figurineHref} variant="secondary" size="sm">Figurine project</Button>
 					<Button href={bataEvents.volunteeringHref} variant="outline" size="sm">Volunteering</Button>
@@ -137,7 +138,7 @@
 
 	<Card class="mt-12 border-primary/20 bg-accent/20">
 		<CardContent class="flex flex-col gap-4 py-6">
-			<p class="text-foreground/90">{openToConversations.text}</p>
+			<p class="text-foreground/90"><EmphasisText text={openToConversations.text} /></p>
 			<Button href={openToConversations.cta.href}>{openToConversations.cta.label}</Button>
 		</CardContent>
 	</Card>

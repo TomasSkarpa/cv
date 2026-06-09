@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { projects } from '$lib/data/projects';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import PageTOC from '$lib/components/site/PageTOC.svelte';
@@ -42,7 +43,7 @@
 
 				<section id="client-delivery" class="scroll-mt-36 space-y-4">
 					<h2 class="text-xl font-semibold">{projects.clientDelivery.title}</h2>
-					<p class="text-foreground/90">{projects.clientDelivery.intro}</p>
+					<p class="text-foreground/90"><EmphasisText text={projects.clientDelivery.intro} /></p>
 					<div class="grid gap-4">
 						{#each projects.clientDelivery.items as project (project.title)}
 							<ProjectCard {project} />

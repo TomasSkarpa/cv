@@ -2,7 +2,7 @@ import type { SkillCategory } from './types';
 
 export const skills = {
   title: 'Skills',
-  intro: 'LinkedIn skills profile.',
+  intro: '**LinkedIn skills profile.**',
   linkedinUrl: 'https://linkedin.com/in/tomas-skarpa',
   topSkills: {
     title: 'Top skills (LinkedIn)',
@@ -107,7 +107,7 @@ export const skills = {
       ],
     },
   ] satisfies SkillCategory[],
-  note: 'Full technology breakdown with depth levels on the Stack page.',
+  note: 'Technology areas and tools on the **Stack page**.',
   stackHref: '/stack',
   continueReading: [
     { label: 'Stack', href: '/stack' },

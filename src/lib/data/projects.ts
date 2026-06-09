@@ -3,7 +3,7 @@ import type { ProjectEntry } from './types';
 export const projects = {
   title: 'Projects',
   intro:
-    'Shipped work with role, context, and outcome. Enterprise SFCC first; side projects and TAOX client delivery below.',
+    'Shipped work with **role, context, and outcome**. Enterprise SFCC first; side projects and TAOX client delivery below.',
   sideProjects: {
     title: 'Side projects',
     items: [
@@ -16,13 +16,13 @@ export const projects = {
         githubUrl: 'https://github.com/TomasSkarpa/flagged-it',
         role: 'Creator, maintainer, full-stack developer',
         context:
-          'Personal project to learn geography through play. Built for fun and ease of use, with ongoing maintenance and feature work.',
+          'Personal project to learn geography through play. Built for **fun and ease of use**, with ongoing maintenance and feature work.',
         description:
           'Learn countries through fun guessing games. Learn about countries playing different game modes: guessing games, flag recognition, shape identification, hangman, facts, and more.',
         contribution:
-          'End-to-end product: Go API backend, Svelte frontend, deployment to flaggedit.app, versioning, and open-source maintenance.',
+          'End-to-end product: **Go API backend, Svelte frontend**, deployment to flaggedit.app, versioning, and open-source maintenance.',
         outcome:
-          'Public web app with multiple game modes, multilingual support, and active development. Educational tool used to explore geography interactively.',
+          'Public web app with **multiple game modes**, multilingual support, and active development. Educational tool used to explore geography interactively.',
         tags: ['Go', 'Svelte', 'Geography', 'Quiz', 'Web application'],
         topics: ['game', 'go', 'golang', 'web-application', 'quiz', 'geography', 'geography-quiz'],
       },
@@ -40,11 +40,11 @@ export const projects = {
         liveUrl: 'https://bata.co.ke',
         role: 'Tech Lead (Software Engineer at time of delivery)',
         context:
-          "Bata's new digital platform was built for commerce. Kenya needed a presentational site on the same stack without a full e-commerce rollout.",
+          "Bata's new digital platform was built for commerce. Kenya needed a **presentational site on the same stack** without a full e-commerce rollout.",
         contribution:
-          'Developed the first non-ecommerce website on the platform: content structure, SFCC configuration, and front-end delivery aligned with the global architecture.',
+          'Developed the **first non-ecommerce website** on the platform: content structure, SFCC configuration, and front-end delivery aligned with the global architecture.',
         outcome:
-          'Proved the platform could serve regional marketing sites, not only storefronts, and established a reusable pattern for similar rollouts.',
+          'Proved the platform could serve **regional marketing sites**, not only storefronts, and established a reusable pattern for similar rollouts.',
         tags: ['Salesforce B2C Commerce Cloud', 'XML', 'JavaScript'],
       },
       {
@@ -57,9 +57,9 @@ export const projects = {
         context:
           "Leaders of Tomorrow Program Bata Group 2025 and the LOT Conference in Prague needed an interactive activity tied to the 1940s Bata shoemaker theme. Part of broader Baťa event work alongside Bata Children's Program volunteering and Zlín Film Festival stand organization.",
         contribution:
-          'Built a Python Flask app using Google Gemini AI for image generation. Attendees take or upload a photo and receive a collectible-style 1/7 figurine render. Results shared via QR code (ImgBB hosting), with print-ready output for the event booth.',
+          'Built a **Python Flask app using Google Gemini AI** for image generation. Attendees take or upload a photo and receive a collectible-style 1/7 figurine render. Results shared via QR code (ImgBB hosting), with print-ready output for the event booth.',
         outcome:
-          'Hands-on conference activity that let participants take home a personalized 1940s shoemaker portrait. Open-sourced on GitHub as batamdc-figurine-generation.',
+          'Hands-on conference activity that let participants take home a **personalized 1940s shoemaker portrait**. Open-sourced on GitHub as batamdc-figurine-generation.',
         tags: ['Python', 'Flask', 'Google Gemini AI', 'HTML', 'QR codes', 'ImgBB'],
       },
     ] satisfies ProjectEntry[],
@@ -67,7 +67,7 @@ export const projects = {
   clientDelivery: {
     title: 'Client delivery (TAOX s.r.o.)',
     intro:
-      'Website projects shipped during part-time frontend developer role (May 2022 – Jul 2023). Laravel, PHP, Bootstrap.',
+      'Website projects shipped during part-time frontend developer role (May 2022 – Jul 2023). **Laravel, PHP, Bootstrap**.',
     items: [
       {
         title: 'VENKU (venku.online / venku.cz)',

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { flaggedIt } from '$lib/data/flagged-it';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import {
@@ -43,7 +44,7 @@
 
 	<div class="space-y-8">
 		{#each flaggedIt.description as paragraph}
-			<p class="leading-relaxed text-foreground/90">{paragraph}</p>
+			<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
 		{/each}
 
 		{#each [
@@ -66,7 +67,7 @@
 
 		<section class="space-y-2">
 			<h2 class="text-xl font-semibold">{flaggedIt.role.title}</h2>
-			<p class="text-foreground/90">{flaggedIt.role.body}</p>
+			<p class="text-foreground/90"><EmphasisText text={flaggedIt.role.body} /></p>
 		</section>
 	</div>
 

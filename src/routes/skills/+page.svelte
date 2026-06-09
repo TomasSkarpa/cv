@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { skills } from '$lib/data/skills';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import { Badge } from '$lib/components/ui/badge/index.js';
@@ -49,7 +50,7 @@
 		{/each}
 	</div>
 
-	<p class="mt-8 text-sm text-muted-foreground">{skills.note}</p>
+	<p class="mt-8 text-sm text-muted-foreground"><EmphasisText text={skills.note} /></p>
 	<Button href={skills.stackHref} variant="secondary" class="mt-4">Stack</Button>
 
 	<ContinueReading links={skills.continueReading} />

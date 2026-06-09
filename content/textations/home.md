@@ -36,7 +36,7 @@ Side projects, sport, homelab. The parts that do not fit a job title.
 
 ### Stack
 
-Client, server, styling, DevOps. What I reach for, with depth levels.
+Client, server, styling, DevOps. What I reach for, grouped by area.
 
 ### CV
 

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { stack } from '$lib/data/stack';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import { Badge } from '$lib/components/ui/badge/index.js';
@@ -18,7 +19,7 @@
 
 	<div class="space-y-8">
 		{#each stack.intro as paragraph}
-			<p class="leading-relaxed text-foreground/90">{paragraph}</p>
+			<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
 		{/each}
 
 		<section class="space-y-4">
@@ -29,7 +30,7 @@
 						<CardHeader class="pb-2">
 							<CardTitle class="text-base">{area.title}</CardTitle>
 							{#if area.description}
-								<p class="text-sm text-muted-foreground">{area.description}</p>
+								<p class="text-sm text-muted-foreground"><EmphasisText text={area.description} /></p>
 							{/if}
 						</CardHeader>
 						<CardContent>
@@ -51,7 +52,7 @@
 				<CardTitle class="text-base">{stack.sideProject.title}</CardTitle>
 			</CardHeader>
 			<CardContent class="space-y-4">
-				<p class="text-sm text-foreground/90">{stack.sideProject.body}</p>
+				<p class="text-sm text-foreground/90"><EmphasisText text={stack.sideProject.body} /></p>
 				<div class="flex flex-wrap gap-2">
 					<Button href={stack.sideProject.href} variant="secondary" size="sm">Project details</Button>
 					<Button href={stack.sideProject.url} variant="outline" size="sm" target="_blank" rel="noopener">

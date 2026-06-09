@@ -3,10 +3,10 @@ export const bataFigurine = {
   githubUrl: 'https://github.com/TomasSkarpa/batamdc-figurine-generation',
   tagline: 'Bata Figurine Generation with Gemini AI',
   subtitle:
-    'Generate collectible shoemaker figurines from photos using Google Gemini AI, with QR code sharing and image hosting for prints.',
+    'Generate **collectible shoemaker figurines** from photos using Google Gemini AI, with QR code sharing and image hosting for prints.',
   description: [
-    "Take a photo or upload an image to generate a shoemaker collectible figurine using Google's Gemini AI. Share results via QR code, ImgBB, or AirDrop. Great for printing out.",
-    "Built for the Leaders of Tomorrow Program Bata Group 2025 and the LOT Conference in Prague. Part of the same Baťa event footprint as Bata Children's Program volunteering and Zlín Film Festival stand work. Attendees could step into a 1940s Bata shoemaker theme and take home a printed photo of themselves as a 1/7 scale figurine.",
+    "Take a photo or upload an image to generate a shoemaker collectible figurine using **Google's Gemini AI**. Share results via QR code, ImgBB, or AirDrop. Great for printing out.",
+    "Built for the **Leaders of Tomorrow Program Bata Group 2025** and the LOT Conference in Prague. Part of the same Baťa event footprint as Bata Children's Program volunteering and Zlín Film Festival stand work. Attendees could step into a **1940s Bata shoemaker theme** and take home a printed photo of themselves as a 1/7 scale figurine.",
   ],
   usage: {
     title: 'Usage',
@@ -43,7 +43,7 @@ export const bataFigurine = {
   },
   role: {
     title: 'Role',
-    body: 'Software Engineer @ Bata Group. Built the Python activity and provided technical support at the LOT Conference (second year attending).',
+    body: 'Software Engineer @ Bata Group. Built the **Python activity** and provided technical support at the **LOT Conference** (second year attending).',
   },
   breadcrumb: { parent: 'Projects', parentHref: '/projects' },
   continueReading: [

@@ -138,7 +138,7 @@ Postman · Robot Framework
 
 Scrum · Agile Methodologies
 
-Full technology breakdown with depth levels on the Stack page.
+Technology areas and tools on the Stack page.
 
 ## Continue reading
 

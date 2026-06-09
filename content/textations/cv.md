@@ -30,6 +30,8 @@ Shaping team operations: defining delivery and operational processes, establishi
 
 Guides developers on deployable ESP configuration patterns, building on the repository and deployment setup created for Bata's email platform.
 
+Created a repository with monitoring guidance and AI-assisted analysis, bridging the gap in understanding MuleSoft and SFCC flows that were hard to parse. Engineers and QA benefited as everyone grew their understanding of these implementations faster through the tool.
+
 Skills: Engineering Leadership, DevOps, and related areas.
 
 #### Software Engineer
@@ -42,13 +44,13 @@ Worked in the Multichannel Development Centre, focusing on the full stack of the
 
 Development work included server-side and client-side on Salesforce B2C Commerce Cloud, middleware, and AWS Lambda integrations.
 
-Handled e2e automation, primarily using Node.js and Python.
+Handled e2e automation, primarily using Python and Robot Framework.
 
 Responsible for onboarding and guiding colleagues due to a wide remit and fast learning pace.
 
 Delivered Bata Kenya, the first non-ecommerce site on Bata's new digital platform.
 
-Built Bata's ESP repository and deployment setup for versioned email configuration across Marigold Campaign and Marigold Engage.
+Built Bata's ESP repository and deployment setup for versioned email configuration.
 
 Strong hands-on work in email templating and ESP platform configuration.
 
@@ -164,7 +166,7 @@ Postman · Robot Framework
 
 Engineering Leadership · DevOps · Scrum
 
-Full LinkedIn skills list with endorsements on the Skills page. Technology depth levels on the Stack page.
+Full LinkedIn skills list with endorsements on the Skills page. Technology overview on the Stack page.
 
 ## Contact
 

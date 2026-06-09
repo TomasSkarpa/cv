@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { cv } from '$lib/data/cv';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import PageTOC from '$lib/components/site/PageTOC.svelte';
@@ -31,7 +32,7 @@
 				<section id="summary" class="scroll-mt-36 space-y-4">
 					<h2 class="text-xl font-semibold">{cv.summary.title}</h2>
 					{#each cv.summary.paragraphs as paragraph}
-						<p class="leading-relaxed text-foreground/90">{paragraph}</p>
+						<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
 					{/each}
 				</section>
 
@@ -54,7 +55,7 @@
 						<CardContent class="space-y-3">
 							<ul class="list-disc space-y-2 pl-5 text-sm text-foreground/90">
 								{#each cv.volunteering.entry.details as detail}
-									<li>{detail}</li>
+									<li><EmphasisText text={detail} /></li>
 								{/each}
 							</ul>
 							<div class="flex flex-wrap gap-2">
@@ -97,7 +98,7 @@
 							<li>{group}</li>
 						{/each}
 					</ul>
-					<p class="text-sm text-muted-foreground">{cv.coreSkills.note}</p>
+					<p class="text-sm text-muted-foreground"><EmphasisText text={cv.coreSkills.note} /></p>
 					<div class="flex flex-wrap gap-2">
 						<Button href={cv.coreSkills.skillsHref} variant="secondary" size="sm">Skills</Button>
 						<Button href={cv.coreSkills.stackHref} variant="outline" size="sm">Stack</Button>

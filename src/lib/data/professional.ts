@@ -3,8 +3,8 @@ import type { ContinueReadingLink } from './types';
 export const professional = {
   title: 'How I work',
   intro: [
-    'Tech Lead at Bata Group in Zlín. I run delivery on Salesforce B2C Commerce Cloud: storefronts, integrations, and the processes around them.',
-    'Before Bata, I shipped client products in PHP and Laravel at TAOX. Different stack, same standard: clear handoffs, readable config, no surprises in production.',
+    '**Tech Lead** at Bata Group in Zlín. I run delivery on **Salesforce B2C Commerce Cloud**: storefronts, integrations, and the processes around them.',
+    'Before Bata, I shipped client products in **PHP and Laravel** at TAOX. Different stack, same standard: **clear handoffs, readable config, no surprises in production**.',
   ],
   currentFocus: {
     title: 'Current focus',
@@ -19,19 +19,19 @@ export const professional = {
   principles: [
     {
       title: 'Own the outcome, not just the ticket',
-      body: 'I trace work from business intent through implementation to production. That means clarifying acceptance criteria early, surfacing risks before they block a release, and staying accountable after go-live.',
+      body: 'I trace work from **business intent through implementation to production**. That means clarifying acceptance criteria early, surfacing risks before they block a release, and staying accountable after go-live.',
     },
     {
       title: 'Make the platform legible',
-      body: 'Enterprise commerce systems are dense. I prioritize readable configuration, consistent front-end patterns, and documentation that helps the next developer move faster without re-learning the same constraints.',
+      body: 'Enterprise commerce systems are dense. I prioritize **readable configuration**, consistent front-end patterns, and documentation that helps the next developer move faster without re-learning the same constraints.',
     },
     {
       title: 'Reduce rework with deliberate trade-offs',
-      body: 'Not every problem needs a custom build. I weigh maintainability, timeline, and platform conventions before extending SFCC or introducing new dependencies in legacy stacks.',
+      body: 'Not every problem needs a custom build. I weigh **maintainability, timeline, and platform conventions** before extending SFCC or introducing new dependencies in legacy stacks.',
     },
     {
       title: 'Communicate in the language of the room',
-      body: 'Whether the audience is a BA, designer, client stakeholder, or another engineer, I translate technical constraints into decisions people can act on.',
+      body: 'Whether the audience is a BA, designer, client stakeholder, or another engineer, I translate **technical constraints into decisions** people can act on.',
     },
   ],
   impactSignals: [
@@ -46,19 +46,19 @@ export const professional = {
   howIWork: [
     {
       title: 'Discovery & scoping',
-      body: 'Map user journeys, integration points, and platform limits before committing to implementation. Prefer short written summaries over long meetings.',
+      body: 'Map user journeys, integration points, and platform limits before committing to implementation. Prefer **short written summaries** over long meetings.',
     },
     {
       title: 'Delivery',
-      body: 'Incremental releases, explicit test paths, and early demos. Keep staging environments representative of production constraints. Maintain strict Scrum practices.',
+      body: '**Incremental releases**, explicit test paths, and early demos. Keep staging environments representative of production constraints. Maintain strict Scrum practices.',
     },
     {
       title: 'Quality',
-      body: 'Semantic markup, accessible forms, predictable error handling, test-driven development, and code that matches existing project conventions.',
+      body: 'Semantic markup, accessible forms, predictable error handling, **test-driven development**, and code that matches existing project conventions.',
     },
     {
       title: 'Handoff',
-      body: "Leave behind notes on configuration, known edge cases, and operational checks so teams are not dependent on one person's context.",
+      body: "Leave behind notes on configuration, known edge cases, and operational checks so teams are not dependent on **one person's context**.",
     },
   ],
   continueReading: [

@@ -2,7 +2,7 @@ import type { Recommendation } from './types';
 
 export const recommendations = {
   title: 'Recommendations',
-  intro: 'Peer recommendations received on LinkedIn.',
+  intro: 'Peer recommendations received on **LinkedIn**.',
   items: [
     {
       name: 'Petr Mičola',

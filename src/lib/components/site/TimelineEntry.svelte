@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { ExperienceEntry } from '$lib/data/types';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card/index.js';
 
@@ -21,7 +22,7 @@
 				</div>
 				<ul class="list-disc space-y-1.5 pl-4 text-sm text-foreground/90">
 					{#each role.details as detail}
-						<li>{detail}</li>
+						<li><EmphasisText text={detail} /></li>
 					{/each}
 				</ul>
 				{#if role.skills}

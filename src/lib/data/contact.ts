@@ -1,7 +1,7 @@
 import { site } from './site';
 
 export const contact = {
-  locationNote: 'Based in Zlín, Czech Republic. Open to remote collaboration.',
+  locationNote: 'Based in **Zlín, Czech Republic**. Open to **remote collaboration**.',
   directLinks: {
     email: { label: 'Email', value: 'tskarpam8@gmail.com', href: 'mailto:tskarpam8@gmail.com' },
     website: {

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { personal } from '$lib/data/personal';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
+	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -16,7 +17,7 @@
 
 	<div class="space-y-8">
 		{#each personal.intro as paragraph}
-			<p class="leading-relaxed text-foreground/90">{paragraph}</p>
+			<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
 		{/each}
 
 		<section class="space-y-4">
@@ -28,7 +29,7 @@
 							<CardTitle class="text-base">{value.title}</CardTitle>
 						</CardHeader>
 						<CardContent>
-							<p class="text-sm text-foreground/90">{value.body}</p>
+							<p class="text-sm text-foreground/90"><EmphasisText text={value.body} /></p>
 						</CardContent>
 					</Card>
 				{/each}
@@ -42,9 +43,9 @@
 					<CardTitle class="text-base">{personal.interests.sideProjects.title}</CardTitle>
 				</CardHeader>
 				<CardContent class="space-y-3 text-sm text-foreground/90">
-					<p>{personal.interests.sideProjects.body}</p>
-					<p>{personal.interests.sideProjects.extra}</p>
-					<p class="text-muted-foreground">{personal.interests.sideProjects.note}</p>
+					<p><EmphasisText text={personal.interests.sideProjects.body} /></p>
+					<p><EmphasisText text={personal.interests.sideProjects.extra} /></p>
+					<p class="text-muted-foreground"><EmphasisText text={personal.interests.sideProjects.note} /></p>
 					<Button href={personal.interests.sideProjects.flaggedItHref} variant="secondary" size="sm">
 						Flagged It
 					</Button>
@@ -59,7 +60,7 @@
 						<CardTitle class="text-base">{block.title}</CardTitle>
 					</CardHeader>
 					<CardContent>
-						<p class="text-sm text-foreground/90">{block.body}</p>
+						<p class="text-sm text-foreground/90"><EmphasisText text={block.body} /></p>
 					</CardContent>
 				</Card>
 			{/each}
@@ -70,7 +71,7 @@
 				<CardContent>
 					<ul class="list-disc space-y-2 pl-5 text-sm text-foreground/90">
 						{#each personal.interests.sport.items as item}
-							<li>{item}</li>
+							<li><EmphasisText text={item} /></li>
 						{/each}
 					</ul>
 				</CardContent>
@@ -82,7 +83,7 @@
 				<CardContent>
 					<ul class="list-disc space-y-2 pl-5 text-sm text-foreground/90">
 						{#each personal.interests.downtime.items as item}
-							<li>{item}</li>
+							<li><EmphasisText text={item} /></li>
 						{/each}
 					</ul>
 				</CardContent>
@@ -91,7 +92,7 @@
 
 		<section class="space-y-4">
 			<h2 class="text-xl font-semibold">{personal.community.title}</h2>
-			<p class="text-foreground/90">{personal.community.intro}</p>
+			<p class="text-foreground/90"><EmphasisText text={personal.community.intro} /></p>
 			<Card>
 				<CardHeader class="pb-2">
 					<CardTitle class="text-base">{personal.community.zlinFilm.title}</CardTitle>
@@ -99,7 +100,7 @@
 				<CardContent>
 					<ul class="list-disc space-y-2 pl-5 text-sm text-foreground/90">
 						{#each personal.community.zlinFilm.items as item}
-							<li>{item}</li>
+							<li><EmphasisText text={item} /></li>
 						{/each}
 					</ul>
 				</CardContent>
@@ -109,7 +110,7 @@
 					<CardTitle class="text-base">{personal.community.lotConference.title}</CardTitle>
 				</CardHeader>
 				<CardContent class="space-y-3 text-sm text-foreground/90">
-					<p>{personal.community.lotConference.body}</p>
+					<p><EmphasisText text={personal.community.lotConference.body} /></p>
 					<div class="flex flex-wrap gap-2">
 						<Button href={personal.community.lotConference.figurineHref} variant="secondary" size="sm">
 							Project details
@@ -124,12 +125,12 @@
 
 		<section class="space-y-2">
 			<h2 class="text-xl font-semibold">{personal.teaching.title}</h2>
-			<p class="text-foreground/90">{personal.teaching.body}</p>
+			<p class="text-foreground/90"><EmphasisText text={personal.teaching.body} /></p>
 		</section>
 
 		<Card class="border-primary/20 bg-accent/20">
 			<CardContent class="space-y-4 py-6">
-				<p class="text-foreground/90">{personal.collaboration.body}</p>
+				<p class="text-foreground/90"><EmphasisText text={personal.collaboration.body} /></p>
 				<Button href={personal.collaboration.cta.href}>{personal.collaboration.cta.label}</Button>
 			</CardContent>
 		</Card>
