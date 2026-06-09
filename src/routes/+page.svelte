@@ -3,6 +3,7 @@
 		bataEvents,
 		exploreCards,
 		exploreIntro,
+		honorableMentions,
 		home,
 		openToConversations,
 		sideProject,
@@ -96,7 +97,13 @@
 
 	<Separator class="my-12" />
 
-	<section class="grid gap-6">
+	<section class="space-y-6">
+		<div class="space-y-2">
+			<h2 class="text-2xl font-semibold tracking-tight">{honorableMentions.title}</h2>
+			<p class="text-muted-foreground"><EmphasisText text={honorableMentions.intro} /></p>
+		</div>
+
+		<div class="grid gap-6">
 		<Card>
 			<CardHeader>
 				<CardTitle>{sideProject.title}</CardTitle>
@@ -120,20 +127,17 @@
 
 		<Card>
 			<CardHeader>
-				<CardTitle>Baťa events</CardTitle>
+				<CardTitle>{bataEvents.title}</CardTitle>
 			</CardHeader>
 			<CardContent class="space-y-4 text-sm text-foreground/90">
-				<p><EmphasisText text={bataEvents.volunteering} /></p>
-				<p><EmphasisText text={bataEvents.lotConference} /></p>
+				<p><EmphasisText text={bataEvents.summary} /></p>
 				<div class="flex flex-wrap gap-2">
-					<Button href={bataEvents.figurineHref} variant="secondary" size="sm">Figurine project</Button>
-					<Button href={bataEvents.volunteeringHref} variant="outline" size="sm">Volunteering</Button>
-					<Button href={bataEvents.githubUrl} variant="outline" size="sm" target="_blank" rel="noopener">
-						GitHub
-					</Button>
+					<Button href={bataEvents.cta.href} variant="secondary" size="sm">{bataEvents.cta.label}</Button>
+					<Button href={bataEvents.figurineHref} variant="outline" size="sm">Figurine project</Button>
 				</div>
 			</CardContent>
 		</Card>
+		</div>
 	</section>
 
 	<Card class="mt-12 border-primary/20 bg-accent/20">

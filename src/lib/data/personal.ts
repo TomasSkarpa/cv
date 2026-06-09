@@ -1,3 +1,4 @@
+import { bataEventsLinks } from './bata-events';
 import type { ContinueReadingLink } from './types';
 
 export const personal = {
@@ -44,7 +45,7 @@ export const personal = {
         'Volleyball for several years with Tělovýchovná jednota Bojkovice, from juniors through men\'s teams, before moving on to basketball.',
         'Basketball in free time now. Also biking, swimming, and picking up a racket or paddle when someone suggests it: badminton, tennis, ping pong.',
         'Beer pong - a social sport with **generous latency tolerance**.',
-        'Running occasionally, including partial company **half-marathon** runs at Baťa events such as Zlín Film Festival.',
+        'Running occasionally, including partial company **half-marathon** runs at Baťa events.',
         'Building the **VENKU** outdoor magazine front end connected professional work with personal interest in movement and sport.',
       ],
       volleyballUrl: 'https://www.cvf.cz/cvs/oddily/?oddil=3711006',
@@ -59,23 +60,10 @@ export const personal = {
     },
   },
   community: {
-    title: 'Community, volunteering & events',
-    intro:
-      "**Bata Children's Program volunteer** (Bata Group, Jul 2023 – Present): started as a program volunteer, then helped organize Children Program events.",
-    zlinFilm: {
-      title: 'Zlín Film Festival',
-      items: [
-        "Operational organization of the **Baťa stand** at Zlín Film Festival 2025 through the Children's Program.",
-        '66th Zlín Film Festival 2026: ran part of the **half-marathon** while organizing the Baťa stand again. Another year surrounded by great people over an unforgettable weekend.',
-      ],
-    },
-    lotConference: {
-      title: 'Leaders of Tomorrow LOT Conference 2025 (Prague)',
-      body: 'Software engineer support for the second year at the conference. Built a **Python app using Google Gemini AI** so attendees could generate a 1/7 scale 1940s Bata shoemaker figurine from their photo, with QR sharing and printed keepsakes.',
-      githubUrl: 'https://github.com/TomasSkarpa/batamdc-figurine-generation',
-      figurineHref: '/projects/bata-figurine-generation',
-    },
-    volunteeringHref: '/volunteering',
+    title: 'Community & volunteering',
+    body: "**Bata Children's Program volunteer** since 2023. I help run Baťa community events in Zlín and beyond, and build interactive tooling when the day job overlaps, including the **LOT figurine booth**.",
+    volunteeringHref: bataEventsLinks.volunteeringHref,
+    figurineHref: bataEventsLinks.figurineHref,
   },
   teaching: {
     title: 'Teaching',

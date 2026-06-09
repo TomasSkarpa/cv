@@ -46,6 +46,10 @@ Intern to tech lead. Bata Group, TAOX, certifications.
 
 SFCC delivery, event tooling, side projects. Role, context, outcome.
 
+## Honorable mentions
+
+Proud of these. I spent real time and effort helping people and kids, for free.
+
 ## On the side
 
 Flagged It — creator and maintainer of https://flaggedit.app/

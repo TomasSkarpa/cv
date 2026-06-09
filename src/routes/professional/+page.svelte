@@ -4,7 +4,15 @@
 	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
+	import PageTOC from '$lib/components/site/PageTOC.svelte';
 	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card/index.js';
+
+	const tocSections = [
+		{ id: 'current-focus', label: 'Current focus' },
+		{ id: 'principles', label: 'Principles' },
+		{ id: 'impact-signals', label: 'Impact signals' },
+		{ id: 'how-i-work', label: 'How I work' },
+	];
 </script>
 
 <svelte:head>
@@ -13,13 +21,14 @@
 
 <PageShell>
 	<PageHeader title={professional.title} />
+	<PageTOC sections={tocSections} />
 
 	<div class="prose-width space-y-8">
 		{#each professional.intro as paragraph}
-			<p class="text-foreground/90 leading-relaxed"><EmphasisText text={paragraph} /></p>
+			<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
 		{/each}
 
-		<section class="space-y-4">
+		<section id="current-focus" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">{professional.currentFocus.title}</h2>
 			<ul class="list-disc space-y-2 pl-5 text-foreground/90">
 				{#each professional.currentFocus.items as item}
@@ -28,7 +37,7 @@
 			</ul>
 		</section>
 
-		<section class="space-y-4">
+		<section id="principles" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">Principles</h2>
 			<div class="grid gap-4">
 				{#each professional.principles as principle (principle.title)}
@@ -44,7 +53,7 @@
 			</div>
 		</section>
 
-		<section class="space-y-4">
+		<section id="impact-signals" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">Impact signals</h2>
 			<ul class="list-disc space-y-2 pl-5 text-foreground/90">
 				{#each professional.impactSignals as signal}
@@ -53,7 +62,7 @@
 			</ul>
 		</section>
 
-		<section class="space-y-4">
+		<section id="how-i-work" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">How I work</h2>
 			<div class="grid gap-4">
 				{#each professional.howIWork as step (step.title)}

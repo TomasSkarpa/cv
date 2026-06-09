@@ -1,3 +1,4 @@
+import { bataEventsLinks, bataEventsShortSummary } from './bata-events';
 import type { ExploreCard, StartHerePath } from './types';
 
 export const home = {
@@ -75,6 +76,12 @@ export const exploreCards: ExploreCard[] = [
   },
 ];
 
+export const honorableMentions = {
+  title: 'Honorable mentions',
+  intro:
+    '**Proud of these.** I spent real time and effort helping **people and kids**, for free.',
+} as const;
+
 export const sideProject = {
   title: 'Flagged It',
   url: 'https://flaggedit.app/',
@@ -84,13 +91,10 @@ export const sideProject = {
 } as const;
 
 export const bataEvents = {
-  volunteering:
-    "**Children's Program volunteer** since 2023. Baťa stand at **Zlín Film Festival** 2025 and 2026.",
-  lotConference:
-    '**LOT Conference 2025**, Prague: photo booth that turns your face into a **1940s Bata shoemaker figurine**. Python, Gemini, QR share, print for attendees.',
-  githubUrl: 'https://github.com/TomasSkarpa/batamdc-figurine-generation',
-  figurineHref: '/projects/bata-figurine-generation',
-  volunteeringHref: '/volunteering',
+  title: 'Baťa events',
+  summary: bataEventsShortSummary,
+  ...bataEventsLinks,
+  cta: { label: 'Volunteering & events', href: bataEventsLinks.volunteeringHref },
 } as const;
 
 export const openToConversations = {

@@ -1,3 +1,4 @@
+import { bataEventsLinks } from './bata-events';
 import type { ExperienceEntry } from './types';
 
 export const cv = {
@@ -110,12 +111,10 @@ export const cv = {
       title: "Bata Children's Program",
       meta: 'Bata Group · Jul 2023 – Present · 3 yrs',
       details: [
-        "Initially volunteer for the Bata Children's Program. Later started helping with organization of Children Program events for Bata.",
-        'Covered operational organization of the **Baťa stand at Zlín Film Festival 2025**. Returned for the 2026 festival with the Baťa stand and a **half-marathon run**.',
-        'Connected tech work: **Bata Figurine Generation app** for Leaders of Tomorrow LOT Conference 2025 (Prague).',
+        "**Bata Children's Program** volunteer (Jul 2023 – present): helps organize Children Program events and Baťa stands at public events.",
+        'Includes **LOT Conference tooling** and Zlín Film Festival coordination. Full story on the Volunteering page.',
       ],
-      href: '/volunteering',
-      figurineHref: '/projects/bata-figurine-generation',
+      href: bataEventsLinks.volunteeringHref,
     },
   },
   certifications: [

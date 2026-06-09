@@ -4,8 +4,16 @@
 	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
+	import PageTOC from '$lib/components/site/PageTOC.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card/index.js';
+
+	const tocSections = [
+		{ id: 'values', label: 'Values' },
+		{ id: 'interests', label: 'Interests' },
+		{ id: 'community', label: 'Community' },
+		{ id: 'teaching', label: 'Teaching' },
+	];
 </script>
 
 <svelte:head>
@@ -14,13 +22,14 @@
 
 <PageShell>
 	<PageHeader title={personal.title} />
+	<PageTOC sections={tocSections} />
 
 	<div class="space-y-8">
 		{#each personal.intro as paragraph}
 			<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
 		{/each}
 
-		<section class="space-y-4">
+		<section id="values" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">Values</h2>
 			<div class="grid gap-4">
 				{#each personal.values as value (value.title)}
@@ -36,7 +45,7 @@
 			</div>
 		</section>
 
-		<section class="space-y-4">
+		<section id="interests" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">Interests</h2>
 			<Card>
 				<CardHeader class="pb-2">
@@ -90,40 +99,20 @@
 			</Card>
 		</section>
 
-		<section class="space-y-4">
+		<section id="community" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">{personal.community.title}</h2>
-			<p class="text-foreground/90"><EmphasisText text={personal.community.intro} /></p>
-			<Card>
-				<CardHeader class="pb-2">
-					<CardTitle class="text-base">{personal.community.zlinFilm.title}</CardTitle>
-				</CardHeader>
-				<CardContent>
-					<ul class="list-disc space-y-2 pl-5 text-sm text-foreground/90">
-						{#each personal.community.zlinFilm.items as item}
-							<li><EmphasisText text={item} /></li>
-						{/each}
-					</ul>
-				</CardContent>
-			</Card>
-			<Card>
-				<CardHeader class="pb-2">
-					<CardTitle class="text-base">{personal.community.lotConference.title}</CardTitle>
-				</CardHeader>
-				<CardContent class="space-y-3 text-sm text-foreground/90">
-					<p><EmphasisText text={personal.community.lotConference.body} /></p>
-					<div class="flex flex-wrap gap-2">
-						<Button href={personal.community.lotConference.figurineHref} variant="secondary" size="sm">
-							Project details
-						</Button>
-						<Button href={personal.community.volunteeringHref} variant="outline" size="sm">
-							Volunteering
-						</Button>
-					</div>
-				</CardContent>
-			</Card>
+			<p class="text-foreground/90"><EmphasisText text={personal.community.body} /></p>
+			<div class="flex flex-wrap gap-2">
+				<Button href={personal.community.volunteeringHref} variant="secondary" size="sm">
+					Volunteering & events
+				</Button>
+				<Button href={personal.community.figurineHref} variant="outline" size="sm">
+					Figurine project
+				</Button>
+			</div>
 		</section>
 
-		<section class="space-y-2">
+		<section id="teaching" class="scroll-mt-36 space-y-2">
 			<h2 class="text-xl font-semibold">{personal.teaching.title}</h2>
 			<p class="text-foreground/90"><EmphasisText text={personal.teaching.body} /></p>
 		</section>

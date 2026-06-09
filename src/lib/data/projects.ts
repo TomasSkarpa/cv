@@ -55,7 +55,7 @@ export const projects = {
         githubUrl: 'https://github.com/TomasSkarpa/batamdc-figurine-generation',
         role: 'Software Engineer',
         context:
-          "Leaders of Tomorrow Program Bata Group 2025 and the LOT Conference in Prague needed an interactive activity tied to the 1940s Bata shoemaker theme. Part of broader Baťa event work alongside Bata Children's Program volunteering and Zlín Film Festival stand organization.",
+          '**LOT Conference 2025**, Prague: interactive 1940s Bata shoemaker photo booth for the Leaders of Tomorrow Program.',
         contribution:
           'Built a **Python Flask app using Google Gemini AI** for image generation. Attendees take or upload a photo and receive a collectible-style 1/7 figurine render. Results shared via QR code (ImgBB hosting), with print-ready output for the event booth.',
         outcome:

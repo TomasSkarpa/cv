@@ -1,3 +1,5 @@
+import { bataEventsLinks } from './bata-events';
+
 export const volunteering = {
   title: 'Volunteering',
   bataChildren: {
@@ -19,8 +21,8 @@ export const volunteering = {
     lotConference: {
       title: 'Leaders of Tomorrow LOT Conference 2025 (Prague)',
       body: 'Software engineer support for the second year at the conference. Built the **Bata Figurine Generation Python app** (Google Gemini AI) so attendees could generate a 1940s Bata shoemaker figurine from a photo, with QR sharing and print-ready keepsakes.',
-      githubUrl: 'https://github.com/TomasSkarpa/batamdc-figurine-generation',
-      figurineHref: '/projects/bata-figurine-generation',
+      githubUrl: bataEventsLinks.githubUrl,
+      figurineHref: bataEventsLinks.figurineHref,
     },
   },
   throughLine: {
@@ -31,6 +33,6 @@ export const volunteering = {
     { label: 'Personal approach', href: '/personal' },
     { label: 'CV', href: '/cv' },
     { label: 'Projects', href: '/projects' },
-    { label: 'Bata Figurine Generation', href: '/projects/bata-figurine-generation' },
+    { label: 'Bata Figurine Generation', href: bataEventsLinks.figurineHref },
   ],
 };

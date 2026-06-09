@@ -6,7 +6,7 @@ export const bataFigurine = {
     'Generate **collectible shoemaker figurines** from photos using Google Gemini AI, with QR code sharing and image hosting for prints.',
   description: [
     "Take a photo or upload an image to generate a shoemaker collectible figurine using **Google's Gemini AI**. Share results via QR code, ImgBB, or AirDrop. Great for printing out.",
-    "Built for the **Leaders of Tomorrow Program Bata Group 2025** and the LOT Conference in Prague. Part of the same Baťa event footprint as Bata Children's Program volunteering and Zlín Film Festival stand work. Attendees could step into a **1940s Bata shoemaker theme** and take home a printed photo of themselves as a 1/7 scale figurine.",
+    'Built for the **Leaders of Tomorrow Program Bata Group 2025** and the LOT Conference in Prague. Attendees stepped into a **1940s Bata shoemaker theme** and took home a printed photo of themselves as a **1/7 scale figurine**.',
   ],
   usage: {
     title: 'Usage',

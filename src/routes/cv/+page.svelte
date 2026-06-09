@@ -60,10 +60,7 @@
 							</ul>
 							<div class="flex flex-wrap gap-2">
 								<Button href={cv.volunteering.entry.href} variant="secondary" size="sm">
-									Volunteering page
-								</Button>
-								<Button href={cv.volunteering.entry.figurineHref} variant="outline" size="sm">
-									Figurine project
+									Volunteering & events
 								</Button>
 							</div>
 						</CardContent>
