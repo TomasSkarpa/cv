@@ -24,7 +24,7 @@ jobs:
           node-version: '22'
           check-latest: true
           cache: npm
-      - run: npm ci
+      - run: npm install --no-fund --no-audit
       - run: npm run build
         env:
           BASE_PATH: /cv
