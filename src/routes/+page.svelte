@@ -61,6 +61,8 @@
 									<a
 										href={appHref(step.href)}
 										class="font-medium text-primary underline-offset-4 hover:underline"
+										target={step.href.startsWith('http') ? '_blank' : undefined}
+										rel={step.href.startsWith('http') ? 'noopener noreferrer' : undefined}
 									>
 										{step.label}
 									</a>
@@ -143,7 +145,13 @@
 	<Card class="mt-12 border-primary/20 bg-accent/20">
 		<CardContent class="flex flex-col gap-4 py-6">
 			<p class="text-foreground/90"><EmphasisText text={openToConversations.text} /></p>
-			<Button href={openToConversations.cta.href}>{openToConversations.cta.label}</Button>
+			<Button
+				href={openToConversations.cta.href}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				{openToConversations.cta.label}
+			</Button>
 		</CardContent>
 	</Card>
 </PageShell>

@@ -16,7 +16,7 @@ Projects
 
 Hiring?
 
-CV → Projects → Contact
+CV → Projects → LinkedIn
 
 Technical review?
 
@@ -48,7 +48,7 @@ SFCC delivery, event tooling, side projects. Role, context, outcome.
 
 ## Honorable mentions
 
-Proud of these. I spent real time and effort helping people and kids, for free.
+I spend real time and effort helping people and kids, for free.
 
 ## On the side
 
@@ -66,6 +66,6 @@ GitHub: github.com/TomasSkarpa/batamdc-figurine-generation
 
 ## Get in touch
 
-Freelance, collaborations, or a role where commerce engineering is the actual job.
+Freelance, collaborations, or a role where commerce engineering is the actual job. LinkedIn message is the fastest way to reach me.
 
-Email me
+Message on LinkedIn

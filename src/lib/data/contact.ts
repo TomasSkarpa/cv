@@ -12,7 +12,7 @@ export const contact = {
     linkedin: {
       label: 'LinkedIn',
       value: 'linkedin.com/in/tomas-skarpa',
-      href: 'https://linkedin.com/in/tomas-skarpa',
+      href: site.linkedinUrl,
     },
     github: {
       label: 'GitHub',

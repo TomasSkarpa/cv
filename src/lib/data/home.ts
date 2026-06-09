@@ -1,4 +1,5 @@
 import { bataEventsLinks, bataEventsShortSummary } from './bata-events';
+import { site } from './site';
 import type { ExploreCard, StartHerePath } from './types';
 
 export const home = {
@@ -17,7 +18,7 @@ export const startHerePaths: StartHerePath[] = [
     steps: [
       { label: 'CV', href: '/cv' },
       { label: 'Projects', href: '/projects' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'LinkedIn', href: site.linkedinUrl },
     ],
   },
   {
@@ -79,7 +80,7 @@ export const exploreCards: ExploreCard[] = [
 export const honorableMentions = {
   title: 'Honorable mentions',
   intro:
-    '**Proud of these.** I spent real time and effort helping **people and kids**, for free.',
+    'I spend real time and effort helping **people and kids**, for free.',
 } as const;
 
 export const sideProject = {
@@ -98,6 +99,6 @@ export const bataEvents = {
 } as const;
 
 export const openToConversations = {
-  text: '**Freelance, collaborations**, or a role where **commerce engineering** is the actual job.',
-  cta: { label: 'Email me', href: '/contact' },
+  text: '**Freelance, collaborations**, or a role where **commerce engineering** is the actual job. **LinkedIn message** is the fastest way to reach me.',
+  cta: { label: 'Message on LinkedIn', href: site.linkedinUrl },
 } as const;

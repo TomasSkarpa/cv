@@ -1,6 +1,6 @@
 ## Navigation and IA
 
-**Purpose:** Working CV for Tomáš Škarpa (Tech Lead · Bata Group). Two entry paths on Home: hiring (CV → Projects → Contact) and technical review (Stack → Projects → How I work). Shallow hierarchy (3 levels max). Labels match `content/textations/site.md` verbatim.
+**Purpose:** Working CV for Tomáš Škarpa (Tech Lead · Bata Group). Two entry paths on Home: hiring (CV → Projects → LinkedIn) and technical review (Stack → Projects → How I work). Shallow hierarchy (3 levels max). Labels match `content/textations/site.md` verbatim.
 
 **Layout:** Sticky top navigation on all viewports; desktop brand block sits left of the slim content column, nav buttons share the row and align vertically to center inside the column. Mobile uses a sheet menu. All page content uses `PageShell` / `.site-container` (40rem). Long pages (`/cv`, `/projects`, `/professional`, `/personal`) include `PageTOC` as horizontal link pills below the page header.
 

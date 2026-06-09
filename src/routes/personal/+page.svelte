@@ -120,7 +120,13 @@
 		<Card class="border-primary/20 bg-accent/20">
 			<CardContent class="space-y-4 py-6">
 				<p class="text-foreground/90"><EmphasisText text={personal.collaboration.body} /></p>
-				<Button href={personal.collaboration.cta.href}>{personal.collaboration.cta.label}</Button>
+				<Button
+					href={personal.collaboration.cta.href}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					{personal.collaboration.cta.label}
+				</Button>
 			</CardContent>
 		</Card>
 	</div>

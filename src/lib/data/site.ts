@@ -10,6 +10,7 @@ export const site = {
   url: 'https://tomasskarpa.github.io/cv/',
   sourceRepo: 'https://github.com/TomasSkarpa/cv',
   sourceRepoLabel: 'github.com/TomasSkarpa/cv',
+  linkedinUrl: 'https://www.linkedin.com/in/tomas-skarpa',
 } as const;
 
 export const headerNav: NavItem[] = [
@@ -38,7 +39,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/tomas-skarpa',
+    href: site.linkedinUrl,
     network: 'linkedin',
   },
   {
