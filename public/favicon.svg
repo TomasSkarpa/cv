@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tomáš Škarpa">
-  <rect width="32" height="32" rx="7" fill="#0a0a0a"/>
-  <path fill="#f7f7f5" d="M7 7h18v4h-5v14h-8V11H7V7z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tomáš Škarpa CV">
+  <rect width="32" height="32" rx="7" fill="#f7f7f5"/>
+  <rect x="8" y="4" width="16" height="24" rx="2" fill="#ffffff" stroke="#0a0a0a" stroke-width="1.75"/>
+  <rect x="11.5" y="9.5" width="9" height="2" rx="1" fill="#0a0a0a"/>
+  <rect x="11.5" y="14" width="9" height="1.5" rx="0.75" fill="#5c5c5c"/>
+  <rect x="11.5" y="17.5" width="9" height="1.5" rx="0.75" fill="#5c5c5c"/>
+  <rect x="11.5" y="21" width="6" height="1.5" rx="0.75" fill="#5c5c5c"/>
 </svg>

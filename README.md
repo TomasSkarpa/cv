@@ -1,5 +1,7 @@
 # Tomáš Škarpa · Working CV
 
+**Live site:** [tomasskarpa.github.io/cv](https://tomasskarpa.github.io/cv/)
+
 A static **working CV** for two audiences: people hiring for commerce engineering roles, and reviewers doing a technical deep-dive. Not a generic portfolio or marketing site.
 
 ## Stack

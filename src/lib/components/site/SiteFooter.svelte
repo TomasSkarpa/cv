@@ -44,7 +44,15 @@
 		</div>
 		<Separator />
 		<p class="text-sm text-muted-foreground">
-			{site.copyright} · {site.location}
+			{site.copyright} · {site.location} ·
+			<a
+				href={site.sourceRepo}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="underline-offset-4 hover:text-foreground hover:underline"
+			>
+				Source
+			</a>
 		</p>
 	</div>
 </footer>
