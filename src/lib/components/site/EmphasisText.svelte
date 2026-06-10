@@ -13,7 +13,7 @@
 	);
 </script>
 
-{#each segments as segment (segment.type + segment.value)}
+{#each segments as segment, index (index)}
 	{#if segment.type === 'strong'}
 		<strong class="font-semibold text-foreground">{segment.value}</strong>
 	{:else}
