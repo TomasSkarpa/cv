@@ -27,6 +27,7 @@ A static **working CV** for two audiences: people hiring for commerce engineerin
 | BEM / component patterns | `design/patterns/components.md` |
 | UX, layout, accessibility rules | `.cursor/rules/` |
 | Deploy pipeline | `.github/workflows/deploy.yml` |
+| Production readiness audit | `.cursor/rules/audit/production-readiness-audit.mdc` |
 
 ## Content workflow
 

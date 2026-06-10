@@ -1,0 +1,69 @@
+---
+description: >-
+  Production/presentation readiness audit for the live CV site. Use when asked
+  to click through skarpa.dev, check if the site is ready to ship, run a site
+  audit, or verify content, links, console errors, mobile, and meta/SEO.
+alwaysApply: false
+category: audit
+tags: [qa, deploy, production, seo, playwright]
+---
+
+# Production readiness audit
+
+Run this checklist against the **deployed site** (default: `https://skarpa.dev/`). If the user gives another URL (preview, localhost), use that instead.
+
+**Do not guess.** Crawl the site with **Playwright MCP** (`browser_run_code_unsafe`, `browser_console_messages`). Read route lists from `design/ia/navigation.md` and `allRoutes` in `src/lib/data/site.ts`.
+
+## Routes to crawl
+
+All primary, secondary, and project detail routes:
+
+`/`, `/professional`, `/personal`, `/stack`, `/cv`, `/projects`, `/contact`, `/sitemap`, `/recommendations`, `/skills`, `/volunteering`, `/privacy`, `/projects/flagged-it`, `/projects/bata-figurine-generation`
+
+## Steps (in order)
+
+1. **Load every route** with `waitUntil: 'domcontentloaded'`. Record HTTP status, `document.title`, load time (ms), and whether `header`, `main`, and body text render after hydration.
+2. **Console errors** — listen for `console` type `error` and `pageerror` on each route. A single route error is a fail for that check.
+3. **Placeholder copy** — scan body text for `/lorem ipsum/i`, `/coming soon/i`, `/\\bTODO\\b/`, `/\\bFIXME\\b/`, `/your name here/i`.
+4. **Links** — collect unique `a[href]` from `/`, `/sitemap`, and `/projects`. HTTP-check internal paths (prepend site origin). Skip `#`, `mailto:`, `tel:`. Relative `./` links are OK if they resolve in-browser. External social URLs may return bot blocks (LinkedIn 999, Facebook 400) in HEAD/GET; verify in browser before marking broken.
+5. **Privacy** — confirm `/privacy` hydrates (not blank), content matches `src/lib/data/privacy.ts`, and footer links to it.
+6. **Meta** — per route: `meta[name="description"]`, `link[rel="canonical"]`, favicon `link[rel="icon"]`. Flag canonical pointing at the wrong host (check `site.url` in `src/lib/data/site.ts` vs live domain).
+7. **Mobile** — viewport `375×812`. Check `scrollWidth <= clientWidth + 2` on `/`, `/cv`, `/projects`, `/contact`. Open the header sheet menu and confirm nav links appear.
+
+## Output format
+
+Reply with a **simple table only** (plus a one-line verdict). Use ✅ pass, ❌ fail, ⚠️ partial.
+
+| Check | Status | Notes |
+|---|---|---|
+| **Content** | | |
+| All placeholder text replaced with real info | | |
+| No broken links (nav + project links) | | |
+| Privacy page exists and is accurate | | |
+| **Tech** | | |
+| No console errors | | |
+| Loads reasonably fast | | |
+| Mobile responsive | | |
+| **Meta** | | |
+| Page title & description set (sharing/SEO) | | |
+| Favicon works | | |
+
+Then one line: **Production ready?** Yes / No / Almost — with blockers listed briefly.
+
+## Pass thresholds
+
+- **Loads reasonably fast:** each route under ~2 s on first load (note actual ms in Notes).
+- **No console errors:** zero `pageerror` and zero console `error` across all routes.
+- **Privacy accurate:** visible copy aligns with `privacy.ts`; mentions Vercel Analytics/Speed Insights when hosted on Vercel.
+- **Meta:** every route has a unique `<title>`; description present after hydration; canonical matches live domain.
+
+## Known project pitfalls
+
+- **`EmphasisText`** keys segments as `segment.type + segment.value`. Duplicate `**word**` in one string causes `each_key_duplicate` and can blank the page (seen on `/privacy`).
+- **`site.url`** may still point at GitHub Pages while production is on `skarpa.dev`; breaks canonical URLs.
+- Favicons are inline SVG data URIs; do not fail because HTTP GET on `data:` returns 404.
+
+## After the audit
+
+- Report findings only unless the user asks to fix issues.
+- If blockers are code bugs, cite the file and root cause briefly in Notes.
