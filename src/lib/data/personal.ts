@@ -4,6 +4,8 @@ import type { ContinueReadingLink } from './types';
 
 export const personal = {
   title: 'Outside work',
+  metaDescription:
+    'Side projects, homelab, sport, and community work outside enterprise commerce engineering.',
   intro: [
     'Outside client work I learn by building: **homelab automation**, **game server ops**, geography games, and side projects that keep my tooling instincts sharp. In my free time, I build apps for **fun and ease of use**.',
     'Most downtime goes to time with my girlfriend, **computer games**, movies, TV shows, and anime, with the occasional plan for something more adventurous outdoors.',

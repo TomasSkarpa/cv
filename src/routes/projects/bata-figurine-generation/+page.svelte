@@ -18,6 +18,7 @@
 
 <svelte:head>
 	<title>{bataFigurine.title} · Projects · Tomáš Škarpa</title>
+	<meta name="description" content={bataFigurine.metaDescription} />
 </svelte:head>
 
 <PageShell>

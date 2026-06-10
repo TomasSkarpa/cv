@@ -3,6 +3,8 @@ import type { ExperienceEntry } from './types';
 
 export const cv = {
   title: 'CV',
+  metaDescription:
+    'CV for Tomáš Škarpa, Tech Lead in Zlín. Bata Group experience from intern to tech lead, certifications, and skills.',
   subtitle: 'Tech Lead · Zlín, Czech Republic',
   summary: {
     title: 'Summary',

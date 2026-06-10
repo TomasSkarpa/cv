@@ -1,5 +1,7 @@
 export const bataFigurine = {
   title: 'Bata Figurine Generation',
+  metaDescription:
+    'AI photo booth for Bata events: Gemini-generated shoemaker figurines with QR sharing and print-ready keepsakes.',
   githubUrl: 'https://github.com/TomasSkarpa/batamdc-figurine-generation',
   tagline: 'Bata Figurine Generation with Gemini AI',
   subtitle:

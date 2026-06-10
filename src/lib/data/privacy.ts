@@ -2,6 +2,7 @@ import { site } from './site';
 
 export const privacy = {
   title: 'Privacy',
+  metaDescription: 'What this personal CV site collects and why. Minimal tracking when hosted on Vercel.',
   subtitle: 'What this site collects and why.',
   intro: [
     'This site is a **personal working CV**. I keep tracking **minimal** and explain what runs when you visit.',

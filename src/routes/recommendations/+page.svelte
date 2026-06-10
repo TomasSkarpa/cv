@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>{recommendations.title} · Tomáš Škarpa</title>
+	<meta name="description" content={recommendations.metaDescription} />
 </svelte:head>
 
 <PageShell>

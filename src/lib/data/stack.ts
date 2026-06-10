@@ -2,6 +2,8 @@ import type { SkillCategory } from './types';
 
 export const stack = {
   title: 'Stack',
+  metaDescription:
+    'Technologies for commerce delivery and side work: SFCC, frontend, backend, cloud, DevOps, and testing.',
   intro: [
     'Technologies I work with across **commerce delivery**, client projects, and side work. A quick reference, not a detailed skills breakdown.',
     'For shipped work and context, see **Projects**. For the full LinkedIn skills list, see **Skills**.',

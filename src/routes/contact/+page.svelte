@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<title>Contact · Tomáš Škarpa</title>
+	<meta name="description" content={contact.metaDescription} />
 </svelte:head>
 
 <PageShell>

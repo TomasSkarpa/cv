@@ -11,6 +11,7 @@
 
 <svelte:head>
 	<title>{skills.title} · Tomáš Škarpa</title>
+	<meta name="description" content={skills.metaDescription} />
 </svelte:head>
 
 <PageShell>

@@ -10,6 +10,7 @@
 
 <svelte:head>
 	<title>{volunteering.title} · Tomáš Škarpa</title>
+	<meta name="description" content={volunteering.metaDescription} />
 </svelte:head>
 
 <PageShell>

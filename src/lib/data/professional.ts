@@ -2,6 +2,8 @@ import type { ContinueReadingLink } from './types';
 
 export const professional = {
   title: 'How I work',
+  metaDescription:
+    'How I work as Tech Lead at Bata Group: SFCC delivery, ownership, trade-offs, and team practices in Zlín.',
   intro: [
     '**Tech Lead** at Bata Group in Zlín. I run delivery on **Salesforce B2C Commerce Cloud**: storefronts, integrations, and the processes around them.',
     'Before Bata, I shipped client products in **PHP and Laravel** at TAOX. Different stack, same standard: **clear handoffs, readable config, no surprises in production**.',

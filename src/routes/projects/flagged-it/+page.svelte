@@ -18,6 +18,7 @@
 
 <svelte:head>
 	<title>{flaggedIt.title} · Projects · Tomáš Škarpa</title>
+	<meta name="description" content={flaggedIt.metaDescription} />
 </svelte:head>
 
 <PageShell>

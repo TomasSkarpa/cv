@@ -2,6 +2,8 @@ import { bataEventsLinks } from './bata-events';
 
 export const volunteering = {
   title: 'Volunteering',
+  metaDescription:
+    "Bata Children's Program volunteer and event work at Zlín Film Festival and LOT Conference.",
   bataChildren: {
     title: "Bata Children's Program",
     meta: 'Bata Group · Jul 2023 – Present · 3 yrs',

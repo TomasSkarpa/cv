@@ -2,6 +2,8 @@ import type { SkillCategory } from './types';
 
 export const skills = {
   title: 'Skills',
+  metaDescription:
+    'Skills profile: full-stack development, commerce platforms, cloud, leadership, and communication.',
   intro: '**LinkedIn skills profile.**',
   linkedinUrl: 'https://linkedin.com/in/tomas-skarpa',
   topSkills: {

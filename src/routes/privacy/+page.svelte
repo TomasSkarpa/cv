@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<title>Privacy · Tomáš Škarpa</title>
+	<meta name="description" content={privacy.metaDescription} />
 </svelte:head>
 
 <PageShell>

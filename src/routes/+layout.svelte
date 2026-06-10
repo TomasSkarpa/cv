@@ -8,7 +8,7 @@
 	import faviconDark from '$lib/assets/favicon-dark.svg';
 	import SiteFooter from '$lib/components/site/SiteFooter.svelte';
 	import SiteHeader from '$lib/components/site/SiteHeader.svelte';
-	import { site } from '$lib/data/site';
+	import { canonicalUrl } from '$lib/seo';
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 	injectSpeedInsights();
@@ -19,8 +19,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} type="image/svg+xml" />
 	<link rel="icon" href={faviconDark} type="image/svg+xml" media="(prefers-color-scheme: dark)" />
-	<meta name="description" content={site.tagline} />
-	<link rel="canonical" href={new URL($page.url.pathname, site.url).href} />
+	<link rel="canonical" href={canonicalUrl($page.url.pathname)} />
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">

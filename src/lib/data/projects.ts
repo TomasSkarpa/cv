@@ -2,6 +2,8 @@ import type { ClientDeliveryGroup, ProjectEntry } from './types';
 
 export const projects = {
   title: 'Projects',
+  metaDescription:
+    'Shipped SFCC work, side projects, and client sites with role, context, and outcome.',
   intro:
     'Shipped work with **role, context, and outcome**. Enterprise SFCC first; side projects and TAOX client delivery below.',
   sideProjects: {

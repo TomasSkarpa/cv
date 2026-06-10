@@ -4,6 +4,8 @@ import type { ExploreCard, StartHerePath } from './types';
 
 export const home = {
   role: 'Tech Lead · Bata Group',
+  metaDescription:
+    'Tech Lead at Bata Group. SFCC storefronts and integrations for global retail. Based in Zlín, Czech Republic.',
   name: 'Tomáš Škarpa',
   intro:
     'I work on **SFCC storefronts** and **integrations** for a global shoe company. Based in **Zlín**.',

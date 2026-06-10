@@ -1,5 +1,7 @@
 export const flaggedIt = {
   title: 'Flagged It',
+  metaDescription:
+    'Flagged It: geography quiz app with flags, shapes, and hangman. Go backend, Svelte frontend.',
   url: 'https://flaggedit.app/',
   githubUrl: 'https://github.com/TomasSkarpa/flagged-it',
   tagline: 'Flagged It - Learn Countries Through **Fun Guessing Games**',

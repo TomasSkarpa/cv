@@ -7,10 +7,11 @@ export const site = {
   location: 'Zlín, Czech Republic',
   copyright: '© 2026 Tomáš Škarpa',
   email: 'tskarpam8@gmail.com',
-  url: 'https://tomasskarpa.github.io/cv/',
+  url: 'https://skarpa.dev/',
   sourceRepo: 'https://github.com/TomasSkarpa/cv',
   sourceRepoLabel: 'github.com/TomasSkarpa/cv',
   linkedinUrl: 'https://www.linkedin.com/in/tomas-skarpa',
+  sitemapMetaDescription: 'Complete list of pages on skarpa.dev.',
 } as const;
 
 export const headerNav: NavItem[] = [

@@ -22,6 +22,7 @@
 
 <svelte:head>
 	<title>{cv.title} · Tomáš Škarpa</title>
+	<meta name="description" content={cv.metaDescription} />
 </svelte:head>
 
 <PageShell>

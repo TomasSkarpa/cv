@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { allRoutes } from '$lib/data/site';
+	import { allRoutes, site } from '$lib/data/site';
 	import { appHref } from '$lib/utils';
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Sitemap · Tomáš Škarpa</title>
+	<meta name="description" content={site.sitemapMetaDescription} />
 </svelte:head>
 
 <PageShell>

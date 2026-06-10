@@ -28,6 +28,7 @@
 
 <svelte:head>
 	<title>{site.name} · {home.role}</title>
+	<meta name="description" content={home.metaDescription} />
 </svelte:head>
 
 <PageShell>
