@@ -12,13 +12,18 @@ tags: [qa, deploy, production, seo, playwright]
 
 Run this checklist against the **deployed site** (default: `https://skarpa.dev/`). If the user gives another URL (preview, localhost), use that instead.
 
-**Do not guess.** Crawl the site with **Playwright MCP** (`browser_run_code_unsafe`, `browser_console_messages`). Read route lists from `design/ia/navigation.md` and `allRoutes` in `src/lib/data/site.ts`.
+**Do not guess.** Crawl the site with **Playwright MCP** (`browser_run_code_unsafe`, `browser_console_messages`).
 
-## Routes to crawl
+## Discover routes (every run)
 
-All primary, secondary, and project detail routes:
+Build the crawl list at audit time. **Never use a hardcoded route list.**
 
-`/`, `/professional`, `/personal`, `/stack`, `/cv`, `/projects`, `/contact`, `/sitemap`, `/recommendations`, `/skills`, `/volunteering`, `/privacy`, `/projects/flagged-it`, `/projects/bata-figurine-generation`
+1. Read `allRoutes` in `src/lib/data/site.ts` and collect each `href`.
+2. Glob `src/routes/**/+page.svelte` and map each file to a path (`+page.svelte` → `/`, nested dirs → `/segment/...`).
+3. Merge both lists, dedupe, sort. Flag any path present in one source but missing in the other (note in output; still crawl the union).
+4. Optional cross-check: fetch live `/sitemap` and compare link hrefs to the merged list.
+
+Use the merged list for all crawl, meta, and console checks.
 
 ## Steps (in order)
 
@@ -28,7 +33,7 @@ All primary, secondary, and project detail routes:
 4. **Links** — collect unique `a[href]` from `/`, `/sitemap`, and `/projects`. HTTP-check internal paths (prepend site origin). Skip `#`, `mailto:`, `tel:`. Relative `./` links are OK if they resolve in-browser. External social URLs may return bot blocks (LinkedIn 999, Facebook 400) in HEAD/GET; verify in browser before marking broken.
 5. **Privacy** — confirm `/privacy` hydrates (not blank), content matches `src/lib/data/privacy.ts`, and footer links to it.
 6. **Meta** — per route: `meta[name="description"]`, `link[rel="canonical"]`, favicon `link[rel="icon"]`. Flag canonical pointing at the wrong host (check `site.url` in `src/lib/data/site.ts` vs live domain).
-7. **Mobile** — viewport `375×812`. Check `scrollWidth <= clientWidth + 2` on `/`, `/cv`, `/projects`, `/contact`. Open the header sheet menu and confirm nav links appear.
+7. **Mobile** — viewport `375×812`. Check `scrollWidth <= clientWidth + 2` on `/` plus at least three other discovered routes (prefer long pages listed under PageTOC in `design/ia/navigation.md`). Open the header sheet menu on `/` and confirm nav links appear.
 
 ## Output format
 
