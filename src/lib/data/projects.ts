@@ -37,7 +37,7 @@ export const projects = {
         featured: true,
         category: 'Enterprise commerce',
         subtitle: 'Enterprise · Presentational SFCC · Bata',
-        liveUrl: 'https://bata.co.ke',
+        liveUrl: 'https://bata.com/ke',
         role: 'Tech Lead (Software Engineer at time of delivery)',
         context:
           "Bata's new digital platform was built for commerce. Kenya needed a **presentational site on the same stack** without a full e-commerce rollout.",

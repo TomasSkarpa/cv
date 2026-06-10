@@ -34,7 +34,7 @@ Featured
 
 Enterprise · Presentational SFCC · Bata
 
-Live site: bata.co.ke
+Live site: https://bata.com/ke
 
 Role: Tech Lead (Software Engineer at time of delivery)
 
