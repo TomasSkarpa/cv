@@ -46,6 +46,13 @@
 		<p class="text-sm text-muted-foreground">
 			{site.copyright} · {site.location} ·
 			<a
+				href={appHref('/privacy')}
+				class="underline-offset-4 hover:text-foreground hover:underline"
+			>
+				Privacy
+			</a>
+			·
+			<a
 				href={site.sourceRepo}
 				target="_blank"
 				rel="noopener noreferrer"

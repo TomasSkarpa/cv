@@ -28,6 +28,7 @@ export const footerQuickLinks: NavItem[] = [
   { label: 'Projects', href: '/projects' },
   { label: 'Stack', href: '/stack' },
   { label: 'Contact', href: '/contact' },
+  { label: 'Privacy', href: '/privacy' },
   { label: 'Sitemap', href: '/sitemap' },
 ];
 
@@ -74,5 +75,6 @@ export const allRoutes: NavItem[] = [
   { label: 'Bata Figurine Generation', href: '/projects/bata-figurine-generation' },
   { label: 'Volunteering', href: '/volunteering' },
   { label: 'Skills', href: '/skills' },
+  { label: 'Privacy', href: '/privacy' },
   { label: 'Sitemap', href: '/sitemap' },
 ];

@@ -1,11 +1,17 @@
 <script lang="ts">
 	import './layout.css';
+	import { dev } from '$app/environment';
 	import { page } from '$app/stores';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import favicon from '$lib/assets/favicon.svg';
 	import faviconDark from '$lib/assets/favicon-dark.svg';
 	import SiteFooter from '$lib/components/site/SiteFooter.svelte';
 	import SiteHeader from '$lib/components/site/SiteHeader.svelte';
 	import { site } from '$lib/data/site';
+
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
+	injectSpeedInsights();
 
 	let { children } = $props();
 </script>

@@ -23,3 +23,7 @@ Bata Figurine Generation (textations)
 Volunteering (textations)
 
 Skills (textations)
+
+Privacy /privacy
+
+Sitemap /sitemap
