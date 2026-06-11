@@ -8,6 +8,7 @@
 	import faviconDark from '$lib/assets/favicon-dark.svg';
 	import SiteFooter from '$lib/components/site/SiteFooter.svelte';
 	import SiteHeader from '$lib/components/site/SiteHeader.svelte';
+	import { resolve } from '$app/paths';
 	import { canonicalUrl } from '$lib/seo';
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
@@ -23,6 +24,7 @@
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">
+	<a href={resolve('/404')} class="sr-only">Page not found</a>
 	<SiteHeader />
 	<main class="flex-1">
 		{@render children()}
