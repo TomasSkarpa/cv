@@ -65,7 +65,7 @@ Then one line: **Production ready?** Yes / No / Almost — with blockers listed 
 ## Known project pitfalls
 
 - **`EmphasisText`** keys segments as `segment.type + segment.value`. Duplicate `**word**` in one string causes `each_key_duplicate` and can blank the page (seen on `/privacy`).
-- **`site.url`** may still point at GitHub Pages while production is on `skarpa.dev`; breaks canonical URLs.
+- **`site.url`** must stay on `https://skarpa.dev/` (canonical domain). GitHub Pages fallback uses `BASE_PATH=/cv` but canonicals should still resolve to skarpa.dev.
 - Favicons are inline SVG data URIs; do not fail because HTTP GET on `data:` returns 404.
 
 ## After the audit

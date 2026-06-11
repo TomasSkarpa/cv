@@ -6,6 +6,8 @@ Tech Lead · Bata Group
 
 SFCC storefronts and integrations. Zlín, Czech Republic.
 
+Site: skarpa.dev (fallback: tomasskarpa.github.io/cv)
+
 Zlín, Czech Republic
 
 ## About (LinkedIn)

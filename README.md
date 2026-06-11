@@ -1,8 +1,19 @@
 # Tomáš Škarpa · Working CV
 
-**Live site:** [tomasskarpa.github.io/cv](https://tomasskarpa.github.io/cv/)
+**Live site:** [skarpa.dev](https://skarpa.dev/)
+
+**Fallback (GitHub Pages):** [tomasskarpa.github.io/cv](https://tomasskarpa.github.io/cv/)
 
 A static **working CV** for two audiences: people hiring for commerce engineering roles, and reviewers doing a technical deep-dive. Not a generic portfolio or marketing site.
+
+## Deployment
+
+| Host | URL | Build |
+| ---- | --- | ----- |
+| **Primary (Vercel)** | [skarpa.dev](https://skarpa.dev/) | Root path (`npm run build`) |
+| **Fallback (GitHub Pages)** | [tomasskarpa.github.io/cv](https://tomasskarpa.github.io/cv/) | `BASE_PATH=/cv` (see `.github/workflows/deploy.yml`) |
+
+Canonical URLs and SEO use `site.url` in `src/lib/data/site.ts` (`https://skarpa.dev/`).
 
 ## Stack
 

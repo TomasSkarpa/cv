@@ -15,7 +15,7 @@ When the site is hosted on Vercel, I use:
 
 Both are privacy-focused: no third-party ad cookies, no cross-site tracking, no personal profiles. Vercel identifies visitors with a daily hash from the request, not a persistent cookie. See Vercel's privacy docs for Web Analytics and Speed Insights.
 
-These tools load only on the Vercel deployment. They do not run on other hosts (for example GitHub Pages preview).
+These tools load only on the Vercel deployment. They do not run on other hosts (for example the GitHub Pages fallback at tomasskarpa.github.io/cv).
 
 ## Contact
 

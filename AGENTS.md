@@ -1,8 +1,8 @@
 # AGENTS.md
 
-Routing context for AI assistants working in **mascarpone-cv-static**.
+Routing context for AI assistants working in **skarpa_cv**.
 
-**Live site:** [tomasskarpa.github.io/cv](https://tomasskarpa.github.io/cv/) · **GitHub Pages base path:** `/cv`
+**Live site:** [skarpa.dev](https://skarpa.dev/) · **Fallback (GitHub Pages):** [tomasskarpa.github.io/cv](https://tomasskarpa.github.io/cv/) (`BASE_PATH=/cv`)
 
 A static **working CV** for two audiences: people hiring for commerce engineering roles, and reviewers doing a technical deep-dive. Not a generic portfolio or marketing site.
 
@@ -42,12 +42,12 @@ Do not invent portfolio phrasing. Follow `design/content/voice-and-tone.md` (fir
 ```bash
 npm install          # install dependencies
 npm run dev          # dev server at localhost:5173
-npm run build        # build to ./build/ (set BASE_PATH=/cv for production parity)
+npm run build        # build to ./build/ (root path; matches skarpa.dev)
 npm run preview      # preview production build
 npm run check        # svelte-check + TypeScript
 ```
 
-Production builds use `BASE_PATH=/cv` (see deploy workflow).
+Primary deployment is **skarpa.dev** (Vercel, root path). The GitHub Pages workflow builds with `BASE_PATH=/cv` as a fallback mirror only (see `.github/workflows/deploy.yml`).
 
 ## Svelte development
 

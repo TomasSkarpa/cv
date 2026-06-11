@@ -32,7 +32,7 @@ export const privacy = {
           href: 'https://vercel.com/docs/speed-insights/privacy-policy',
         },
       ],
-      note: 'These tools load only on the **Vercel deployment**. They do not run on other hosts (for example GitHub Pages preview).',
+      note: 'These tools load only on the **Vercel deployment**. They do not run on other hosts (for example the GitHub Pages fallback at tomasskarpa.github.io/cv).',
     },
     {
       id: 'contact',

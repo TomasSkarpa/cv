@@ -1,4 +1,6 @@
-name: Deploy to GitHub Pages
+name: Deploy fallback to GitHub Pages
+
+# Primary site: https://skarpa.dev (Vercel). This workflow mirrors to GitHub Pages only.
 
 on:
   push:
