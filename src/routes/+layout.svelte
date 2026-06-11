@@ -24,7 +24,7 @@
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">
-	<a href={resolve('/404')} class="sr-only">Page not found</a>
+	<a href={resolve('/not-found')} class="sr-only">Page not found</a>
 	<SiteHeader />
 	<main class="flex-1">
 		{@render children()}
