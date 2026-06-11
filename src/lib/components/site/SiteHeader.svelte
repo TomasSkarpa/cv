@@ -16,11 +16,24 @@
 
 </script>
 
+{#snippet primaryNavLinks(buttonClass?: string)}
+	{#each headerNav as item (item.href)}
+		<Button
+			href={item.href}
+			variant={isAppPathActive(item.href, $page.url.pathname) ? 'secondary' : 'ghost'}
+			size="sm"
+			class={cn('text-sm', buttonClass)}
+		>
+			{item.label}
+		</Button>
+	{/each}
+{/snippet}
+
 <header class="sticky top-0 z-50 border-b border-border/80 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-	<div class="relative flex h-16 items-center overflow-visible">
+	<div class="relative flex h-16 items-center gap-2 px-4 sm:px-6">
 		<a
 			href={appHref('/')}
-			class="group relative z-20 flex shrink-0 flex-col overflow-visible bg-background/95 px-4 py-1 backdrop-blur-sm sm:px-6"
+			class="group relative z-20 flex shrink-0 flex-col overflow-visible bg-background/95 py-1 backdrop-blur-sm"
 		>
 			<span class="whitespace-nowrap text-sm font-semibold tracking-tight text-foreground group-hover:text-primary">
 				{site.name}
@@ -28,22 +41,22 @@
 			<span class="whitespace-nowrap text-xs text-muted-foreground">{site.title}</span>
 		</a>
 
-		<div class="pointer-events-none absolute inset-x-0 z-0 flex h-full items-center justify-center px-4 sm:px-6">
-			<nav class="pointer-events-auto hidden items-center gap-1 md:flex" aria-label="Primary">
-				{#each headerNav as item (item.href)}
-					<Button
-						href={item.href}
-						variant={isAppPathActive(item.href, $page.url.pathname) ? 'secondary' : 'ghost'}
-						size="sm"
-						class="text-sm"
-					>
-						{item.label}
-					</Button>
-				{/each}
+		<nav
+			class="relative z-10 ml-auto hidden min-w-0 items-center gap-0.5 md:flex lg:hidden"
+			aria-label="Primary"
+		>
+			{@render primaryNavLinks()}
+		</nav>
+
+		<div
+			class="pointer-events-none absolute inset-x-0 z-0 hidden h-full items-center justify-center px-4 sm:px-6 lg:flex"
+		>
+			<nav class="pointer-events-auto flex items-center gap-1" aria-label="Primary">
+				{@render primaryNavLinks()}
 			</nav>
 		</div>
 
-		<div class="relative z-10 ml-auto pr-4 sm:pr-6 md:hidden">
+		<div class="relative z-10 ml-auto md:hidden">
 			<Sheet bind:open={mobileOpen}>
 				<SheetTrigger
 					class={cn(buttonVariants({ variant: 'outline', size: 'icon' }))}

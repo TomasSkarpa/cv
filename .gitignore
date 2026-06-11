@@ -1,6 +1,7 @@
 node_modules
 
 # Local review artifacts
+review/
 .playwright-mcp/
 .astro/
 home-audit.yml
