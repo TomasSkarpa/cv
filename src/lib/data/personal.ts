@@ -56,7 +56,7 @@ export const personal = {
     downtime: {
       title: 'Downtime',
       items: [
-        '**Quality time with my loved one 🍯**',
+        '**Quality time with my beloved 🍯**',
         'Computer games, movies, TV shows, and anime.',
         'Occasional trips and small adventures planned around getting outside when the mood strikes.',
       ],

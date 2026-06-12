@@ -54,7 +54,7 @@ Running & outdoor events
 
 ### Downtime
 
-Quality time with my loved one 🍯
+Quality time with my beloved 🍯
 
 Computer games, movies, TV shows, and anime.
 
