@@ -40,6 +40,7 @@ Linked from primary pages, not in main header nav.
 | Skills | `/skills` | CV, Stack |
 | Volunteering | `/volunteering` | Personal, CV |
 | Flagged It | `/projects/flagged-it` | Home, Personal, Projects |
+| OSSA | `/projects/ossa` | Projects |
 | Bata Figurine Generation | `/projects/bata-figurine-generation` | Home, Personal, Projects, CV, Volunteering |
 
 ### Hierarchy

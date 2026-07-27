@@ -4,6 +4,22 @@ Shipped work with role, context, and outcome. Enterprise SFCC first; side projec
 
 ## Side projects
 
+### OSSA
+
+Commerce reference · https://ecom.skarpa.dev/
+
+Static anatomical footwear house: catalogue, client bag, honest checkout dead-end, interactive store skeleton, and admin ops demo.
+
+Role: Creator · tech lead portfolio showcase
+
+Context: Needed an ownable ecommerce demo that shows storefront craft and systems thinking, not only employer SFCC work.
+
+Contribution: Designed brand + commerce UX, SvelteKit static storefront, Coolify deploy (develop → dev, main → prod), and narrative surfaces at /bones and /admin.
+
+Outcome: Public reference at ecom.skarpa.dev for hiring conversations about commerce engineering and technical leadership.
+
+SvelteKit · TypeScript · Ecommerce · Coolify · Portfolio
+
 ### Flagged It
 
 Creator & maintainer · https://flaggedit.app/

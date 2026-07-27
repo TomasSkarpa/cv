@@ -73,6 +73,7 @@ export const allRoutes: NavItem[] = [
   { label: 'Contact', href: '/contact' },
   { label: 'Recommendations', href: '/recommendations' },
   { label: 'Flagged It', href: '/projects/flagged-it' },
+  { label: 'OSSA', href: '/projects/ossa' },
   { label: 'Bata Figurine Generation', href: '/projects/bata-figurine-generation' },
   { label: 'Volunteering', href: '/volunteering' },
   { label: 'Skills', href: '/skills' },

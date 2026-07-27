@@ -21,7 +21,9 @@
 			? '/projects/flagged-it'
 			: project.slug === 'bata-figurine-generation'
 				? '/projects/bata-figurine-generation'
-				: undefined,
+				: project.slug === 'ossa'
+					? '/projects/ossa'
+					: undefined,
 	);
 </script>
 

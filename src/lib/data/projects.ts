@@ -10,6 +10,24 @@ export const projects = {
     title: 'Side projects',
     items: [
       {
+        slug: 'ossa',
+        title: 'OSSA',
+        category: 'Side projects',
+        subtitle: 'Commerce reference · https://ecom.skarpa.dev/',
+        liveUrl: 'https://ecom.skarpa.dev/',
+        githubUrl: 'https://github.com/TomasSkarpa/ecom',
+        role: 'Creator · tech lead portfolio showcase',
+        context:
+          'Needed an **ownable ecommerce demo** that shows storefront craft and **systems thinking**, not only employer SFCC work.',
+        description:
+          'Static anatomical footwear house: catalogue, client bag, honest checkout dead-end, interactive store skeleton, and admin ops demo.',
+        contribution:
+          'Designed brand + commerce UX, SvelteKit static storefront, Coolify deploy (`develop` → dev, `main` → prod), and narrative surfaces at `/bones` and `/admin`.',
+        outcome:
+          'Public reference at **ecom.skarpa.dev** for hiring conversations about commerce engineering and technical leadership.',
+        tags: ['SvelteKit', 'TypeScript', 'Ecommerce', 'Coolify', 'Portfolio'],
+      },
+      {
         slug: 'flagged-it',
         title: 'Flagged It',
         category: 'Side projects',
