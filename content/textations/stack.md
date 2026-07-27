@@ -10,7 +10,7 @@ For shipped work and context, see Projects. For the full LinkedIn skills list, s
 
 Primary focus at Bata Group: storefronts, configuration, email templating, ESP deployment, and surrounding integrations. Earlier work included two custom systems: an e-commerce platform in Perl and a CMS in PHP/Laravel.
 
-Salesforce B2C Commerce Cloud · Enterprise e-commerce delivery · Middleware and platform integrations · Email templating and ESP configuration · ESP repository and versioned deployment setup · Strapi · Radial · Necore · Marigold Campaign · Marigold Engage · Custom e-commerce platform (Perl) · Custom CMS (PHP/Laravel)
+Salesforce B2C Commerce Cloud · Enterprise e-commerce delivery · Middleware and platform integrations · Email templating and ESP configuration · ESP repository and versioned deployment setup · Strapi · Radial · Netcore · Marigold Campaign · Marigold Engage · Custom e-commerce platform (Perl) · Custom CMS (PHP/Laravel)
 
 ### Frontend
 

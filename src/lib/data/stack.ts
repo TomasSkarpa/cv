@@ -24,7 +24,7 @@ export const stack = {
         'ESP repository and versioned deployment setup',
         'Strapi',
         'Radial',
-        'Necore',
+        'Netcore',
         'Marigold Campaign',
         'Marigold Engage',
         'Custom e-commerce platform (Perl)',
