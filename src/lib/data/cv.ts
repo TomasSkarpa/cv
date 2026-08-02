@@ -34,8 +34,7 @@ export const cv = {
           period: 'Jan 2024 – Apr 2026 · 2 yrs 4 mos',
           location: '',
           details: [
-            '**Multichannel Development Centre**: server and client **SFCC**, middleware, and **email templating** in production.',
-            'Full stack **SFCC**, middleware, **AWS Lambda**; **Python/Robot** e2e automation; **onboarding** colleagues.',
+            'Production **SFCC** (server and client), middleware, **AWS Lambda**, and **email templating**; **Python/Robot** e2e automation; onboarded colleagues on the stack.',
             '**Bata Kenya**: first **presentational site** on the new SFCC platform; reusable pattern for **regional rollouts**.',
             "**ESP repository** for versioned email configuration and templating.",
           ],
