@@ -48,7 +48,7 @@ export const stack = {
       title: 'Backend & scripting',
       description:
         'APIs, automation, and server-side work across agency and enterprise projects, including **AWS Lambda** for the integration layer.',
-      items: ['Node.js', 'PHP', 'Laravel', 'Python', 'Go', 'AWS Lambda'],
+      items: ['Node.js', 'PHP', 'Laravel', 'Python', 'Go', 'AWS Lambda', 'Payload CMS'],
     },
     {
       title: 'Cloud & DevOps',
@@ -56,6 +56,7 @@ export const stack = {
       items: [
         'AWS services',
         'Docker',
+        'Coolify',
         'GitHub Actions',
         'Ansible',
         'Bitbucket Pipelines',
@@ -69,7 +70,7 @@ export const stack = {
   ] satisfies SkillCategory[],
   sideProject: {
     title: 'Side project stack',
-    body: '**Flagged It** (https://flaggedit.app/): Go API, Svelte frontend, deployed and maintained as an **open-source geography quiz**.',
+    body: '**Flagged It** (https://flaggedit.app/): Go API, Svelte frontend, deployed and maintained as an **open-source geography quiz**. Side apps (task.skarpa.dev, eventfoto.cz) on Coolify with branch-based staging.',
     href: '/projects/flagged-it',
     url: 'https://flaggedit.app/',
   },

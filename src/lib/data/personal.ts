@@ -36,7 +36,7 @@ export const personal = {
     },
     homelab: {
       title: 'Homelab & automation',
-      body: '**Docker, Ansible, Home Assistant**, custom Lovelace cards, and scripted workflows. I treat personal infrastructure as a sandbox for **orchestration and reliability** patterns.',
+      body: '**Docker, Ansible, Coolify, Home Assistant**, custom Lovelace cards, and scripted workflows. Self-hosted apps on home hardware; Discord-linked AI assistants with scoped secrets for personal and work contexts. I treat personal infrastructure as a sandbox for **orchestration and reliability** patterns.',
     },
     gameServers: {
       title: 'Game server hosting',

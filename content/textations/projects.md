@@ -42,7 +42,55 @@ Go · Svelte · Geography · Quiz · Web application
 
 Topics: game, go, golang, web-application, quiz, geography, geography-quiz
 
+### task.skarpa.dev
+
+Personal productivity · https://task.skarpa.dev/
+
+Daily **task** list: one day on the homepage, Jira sync, day close with spillover, history.
+
+Role: Creator
+
+Context: Needed a low-friction daily list that stays honest about one calendar day and picks up unfinished work tomorrow.
+
+Contribution: SvelteKit app, disk-backed day JSON, API skills for sync/close/add, and a homepage built for today only.
+
+Outcome: Personal daily workflow at task.skarpa.dev, wired into Cursor skills and Jira.
+
+SvelteKit · TypeScript · Jira · Personal productivity
+
+### Eventfoto (AI Fotokoutek)
+
+Side business · https://eventfoto.cz/
+
+AI event photo booth · Marketing site, guest kiosk, operator console
+
+Role: Creator · operator · full-stack
+
+Context: Turn a conference figurine booth into a rentable product: guests photographed, AI keeps identity and changes scene, QR to Immich, print at the event.
+
+Contribution: Next.js + Payload CMS, kiosk and operator flows, identity-preserving OpenAI edits, Coolify prod/staging, cookieless Umami analytics.
+
+Outcome: Live at eventfoto.cz with staging on dev-fotokoutek.skarpa.dev; used at public events.
+
+Next.js · Payload CMS · OpenAI · Immich · Coolify · Event tooling
+
 ## Enterprise commerce
+
+### Bata AI Brain
+
+Enterprise · AI platform · Bata
+
+Live: https://ai.batamdc.com/
+
+Role: Tech Lead · architecture and catalog design
+
+Context: Commerce and integration teams needed one place for team-approved AI instructions, not scattered prompts and personal skill folders.
+
+Contribution: Designed the catalog model (versioned skills and agents, categories, clearance levels) and delivery through MCP plus REST so engineers load exact pins in Cursor and Codex.
+
+Outcome: Shared Brain at ai.batamdc.com for SFCC runbooks, Jira formats, analysis agents, and delivery docs across the team.
+
+MCP · REST API · AI tooling · Knowledge catalog · Salesforce B2C Commerce Cloud
 
 ### Bata Kenya Website
 

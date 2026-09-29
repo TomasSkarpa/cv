@@ -16,6 +16,7 @@ export const professional = {
       'End-to-end retail delivery: **integrations, front-end work, platform configuration, middleware, and email tooling**.',
       'Established **versioned ESP deployment** so email configuration moves through the same review and ownership as application code.',
       '**Onboarding, mentoring, and test automation** to grow the team and protect releases.',
+      '**Bata AI Brain**: architecture and catalog for team AI skills, clearance, and MCP access.',
     ],
   },
   principles: [

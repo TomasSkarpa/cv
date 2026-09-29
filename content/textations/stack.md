@@ -22,13 +22,13 @@ JavaScript · React · Next.js · Svelte · Bootstrap · Tailwind CSS · Sass
 
 APIs, automation, and server-side work across agency and enterprise projects, including AWS Lambda for the integration layer.
 
-Node.js · PHP · Laravel · Python · Go · AWS Lambda
+Node.js · PHP · Laravel · Python · Go · AWS Lambda · Payload CMS
 
 ### Cloud & DevOps
 
 Cloud services, containers, and release automation.
 
-AWS services · Docker · GitHub Actions · Ansible · Bitbucket Pipelines
+AWS services · Docker · Coolify · GitHub Actions · Ansible · Bitbucket Pipelines
 
 ### Testing & quality
 
@@ -38,7 +38,7 @@ Postman · Bruno · Robot Framework · Node.js and Python test automation
 
 ## Side project stack
 
-Flagged It (https://flaggedit.app/): Go API, Svelte frontend, deployed and maintained as an open-source geography quiz.
+Flagged It (https://flaggedit.app/): Go API, Svelte frontend, deployed and maintained as an open-source geography quiz. Side apps (task.skarpa.dev, eventfoto.cz) on Coolify with branch-based staging.
 
 ## Continue reading
 

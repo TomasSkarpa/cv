@@ -27,6 +27,7 @@ export const cv = {
             'Reviewing and guiding **daily technical decisions**; **mentoring** developers on delivery and platform patterns.',
             '**Delivery process**, docs standards, **Scrum**, and **deployment automation**.',
             '**MuleSoft/SFCC monitoring repo** with AI-assisted docs so engineers and QA parse flows faster.',
+            '**Bata AI Brain**: versioned team skills catalog with MCP delivery so engineers load approved runbooks and formats in Cursor and Codex.',
           ],
         },
         {

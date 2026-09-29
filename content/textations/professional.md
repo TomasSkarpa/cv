@@ -16,6 +16,8 @@ Established **versioned ESP deployment** so email configuration moves through th
 
 **Onboarding, mentoring, and test automation** to grow the team and protect releases.
 
+**Bata AI Brain**: architecture and catalog for team AI skills, clearance, and MCP access.
+
 ## Principles
 
 ### Own the outcome, not just the ticket

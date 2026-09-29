@@ -46,11 +46,66 @@ export const projects = {
         tags: ['Go', 'Svelte', 'Geography', 'Quiz', 'Web application'],
         topics: ['game', 'go', 'golang', 'web-application', 'quiz', 'geography', 'geography-quiz'],
       },
+      {
+        slug: 'task-skarpa',
+        title: 'task.skarpa.dev',
+        category: 'Side projects',
+        subtitle: 'Personal productivity · https://task.skarpa.dev/',
+        liveUrl: 'https://task.skarpa.dev/',
+        role: 'Creator',
+        context:
+          'Needed a **low-friction daily list** that stays honest about one calendar day and picks up unfinished work tomorrow.',
+        description:
+          'Daily **task** list: one day on the homepage, Jira sync, day close with spillover, history.',
+        contribution:
+          'SvelteKit app, disk-backed day JSON, API skills for sync/close/add, and a homepage built for **today only**.',
+        outcome:
+          'Personal daily workflow at **task.skarpa.dev**, wired into Cursor skills and Jira.',
+        tags: ['SvelteKit', 'TypeScript', 'Jira', 'Personal productivity'],
+      },
+      {
+        slug: 'eventfoto',
+        title: 'Eventfoto (AI Fotokoutek)',
+        category: 'Side projects',
+        subtitle: 'Side business · https://eventfoto.cz/',
+        liveUrl: 'https://eventfoto.cz/',
+        role: 'Creator · operator · full-stack',
+        context:
+          'Turn a conference figurine booth into a **rentable product**: guests photographed, AI keeps identity and changes scene, QR to Immich, print at the event.',
+        description:
+          'AI event photo booth · Marketing site, guest kiosk, operator console.',
+        contribution:
+          'Next.js + Payload CMS, kiosk and operator flows, identity-preserving OpenAI edits, Coolify prod/staging, cookieless Umami analytics.',
+        outcome:
+          'Live at **eventfoto.cz** with staging on dev-fotokoutek.skarpa.dev; used at public events.',
+        tags: ['Next.js', 'Payload CMS', 'OpenAI', 'Immich', 'Coolify', 'Event tooling'],
+      },
     ] satisfies ProjectEntry[],
   },
   enterprise: {
     title: 'Enterprise commerce',
     items: [
+      {
+        slug: 'bata-ai-brain',
+        title: 'Bata AI Brain',
+        category: 'Enterprise commerce',
+        subtitle: 'Enterprise · AI platform · Bata',
+        liveUrl: 'https://ai.batamdc.com/',
+        role: 'Tech Lead · architecture and catalog design',
+        context:
+          'Commerce and integration teams needed **one place for team-approved AI instructions**, not scattered prompts and personal skill folders.',
+        contribution:
+          'Designed the catalog model (**versioned skills and agents, categories, clearance levels**) and delivery through **MCP plus REST** so engineers load exact pins in Cursor and Codex.',
+        outcome:
+          'Shared Brain at **ai.batamdc.com** for SFCC runbooks, Jira formats, analysis agents, and delivery docs across the team.',
+        tags: [
+          'MCP',
+          'REST API',
+          'AI tooling',
+          'Knowledge catalog',
+          'Salesforce B2C Commerce Cloud',
+        ],
+      },
       {
         slug: 'bata-kenya',
         title: 'Bata Kenya Website',
