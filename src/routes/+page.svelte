@@ -33,7 +33,7 @@
 
 <PageShell>
 	<section class="space-y-8">
-		<div class="space-y-4">
+		<div class="home-intro space-y-4">
 			<p class="text-sm font-medium uppercase tracking-widest text-muted-foreground">{home.role}</p>
 			<h1 class="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
 				{home.name}
@@ -156,3 +156,9 @@
 		</CardContent>
 	</Card>
 </PageShell>
+
+<style>
+	.home-intro > p:first-child { font-size: 0.75rem; letter-spacing: 0.09em; color: #5c5c5c; }
+	.home-intro h1 { font-size: clamp(2.5rem, 5vw, 3.25rem); line-height: 1.06; letter-spacing: -0.035em; }
+	.home-intro p.text-lg { max-width: 38rem; line-height: 1.65; }
+</style>
