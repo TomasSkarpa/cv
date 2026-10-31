@@ -123,3 +123,55 @@
 		min-width: 0;
 	}
 }
+
+/* Shared hierarchy for page headings and introductions. */
+main .site-container h1 {
+	line-height: 1.06;
+	letter-spacing: -0.035em;
+}
+
+main .site-container h2 {
+	line-height: 1.2;
+	letter-spacing: -0.035em;
+}
+
+main .site-container h3,
+main .site-container [data-slot="card-title"] {
+	line-height: 1.3;
+	letter-spacing: -0.025em;
+}
+
+main .site-container > header > p {
+	max-width: 38rem;
+	line-height: 1.65;
+}
+
+/* Give cards containing links the same interaction feedback. */
+main [data-slot="card"]:has(a[href]) {
+	border: 1px solid var(--border);
+	transition: background-color 150ms ease-out, border-color 150ms ease-out;
+}
+
+main [data-slot="card"]:has(a[href]):hover,
+main [data-slot="card"]:has(a[href]):focus-within {
+	background: var(--muted);
+	border-color: var(--ring);
+}
+
+main [data-slot="card-title"] a {
+	display: block;
+	text-decoration: underline;
+	text-decoration-color: var(--muted-foreground);
+	text-underline-offset: 0.2em;
+}
+
+main [data-slot="card-title"] a::after {
+	content: " ↗";
+	font-weight: 400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	main [data-slot="card"]:has(a[href]) {
+		transition: none;
+	}
+}

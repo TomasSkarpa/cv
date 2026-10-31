@@ -85,7 +85,7 @@
 		</div>
 		<div class="grid gap-4">
 			{#each exploreCards as card (card.href)}
-				<Card class={card.href === "/professional" ? "h-full explore-how-i-work" : "h-full transition-colors hover:bg-accent/30"}>
+				<Card class="h-full">
 					<CardHeader>
 						<p class="text-xs font-medium text-muted-foreground">{card.mark}</p>
 						<CardTitle>
@@ -161,9 +161,4 @@
 	.home-intro > p:first-child { font-size: 0.75rem; letter-spacing: 0.09em; color: #5c5c5c; }
 	.home-intro h1 { font-size: clamp(2.5rem, 5vw, 3.25rem); line-height: 1.06; letter-spacing: -0.035em; }
 	.home-intro p.text-lg { max-width: 38rem; line-height: 1.65; }
-	:global(.explore-how-i-work) { border: 1px solid #d4d4d0; transition: background-color 150ms ease-out, border-color 150ms ease-out; }
-	:global(.explore-how-i-work:hover), :global(.explore-how-i-work:focus-within) { background: #ececea; border-color: #999993; }
-	:global(.explore-how-i-work [data-slot="card-title"] a) { display: block; text-decoration: underline; text-decoration-color: #999993; text-underline-offset: 0.2em; }
-	:global(.explore-how-i-work [data-slot="card-title"] a::after) { content: " ↗"; font-weight: 400; }
-	@media (prefers-reduced-motion: reduce) { :global(.explore-how-i-work) { transition: none; } }
 </style>
