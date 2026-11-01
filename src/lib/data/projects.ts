@@ -4,8 +4,7 @@ export const projects = {
   title: 'Projects',
   metaDescription:
     'Shipped SFCC work, side projects, and client sites with role, context, and outcome.',
-  intro:
-    'Shipped work with **role, context, and outcome**. Enterprise work first, followed by client delivery and side projects.',
+  intro: 'Shipped work with **role, context, and outcome**.',
   sideProjects: {
     title: 'Side projects',
     items: [
@@ -112,19 +111,19 @@ export const projects = {
         title: 'Bata BizOps',
         featured: true,
         category: 'Enterprise commerce',
-        subtitle: 'Enterprise · AI campaign workspace · Bata',
+        subtitle: 'Enterprise · AI business operations platform · Bata',
         liveUrl: 'https://bizops.fa2abata.com/',
         role: 'Creator · architect · Tech Lead',
         context:
-          'Campaign operators needed **one shared hostname** with **isolated runtimes** for AI-assisted SFCC campaign work on Development, not ad-hoc local setups.',
+          'Commerce and marketing teams needed **one shared business-operations platform**: **one hostname**, **isolated operator runtimes**, and AI-assisted workflows tied to real admin systems, not scattered local tooling.',
         contribution:
-          'Created and operated the Bata **CloudCLI** fork: architecture, governance, release pipeline, and rollout. Partner delivered **agent skills** and **admin/API integrations** (ecommerce, PIM, CRMs).',
+          'Created and operated the Bata **CloudCLI** fork (architecture, governance, release pipeline, rollout). **Co-delivered** with an external partner on **agent skills** and **admin/API integrations** (ecommerce, PIM, CRMs), **reviewing the solution at each step**.',
         outcome:
-          'Live platform at **bizops.fa2abata.com** for safe Page Designer preview and apply workflows, wired to immutable campaign releases.',
+          'Live at **bizops.fa2abata.com**: shared ops workspace for AI-assisted SFCC campaign work, safe Page Designer preview and apply, and immutable release rollout across operators.',
         tags: [
           'AI tooling',
+          'Business operations',
           'Salesforce B2C Commerce Cloud',
-          'Campaign operations',
           'Integrations',
           'Release automation',
         ],
