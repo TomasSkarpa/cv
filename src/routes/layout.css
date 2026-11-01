@@ -163,6 +163,52 @@ main [data-slot="card"]:has(a[href]):is(:hover, :focus-within) a[data-slot="butt
 	border-color: var(--border);
 }
 
+/* Gentle feedback for content buttons; navigation and social links keep their own motion. */
+main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:disabled):not([aria-disabled="true"]) {
+	transition: background-color 230ms cubic-bezier(.22, 1, .36, 1), border-color 230ms cubic-bezier(.22, 1, .36, 1), box-shadow 300ms cubic-bezier(.22, 1, .36, 1), transform 380ms cubic-bezier(.34, 1.25, .64, 1);
+}
+
+main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+	transform: translateY(-1px);
+	box-shadow: 0 3px 8px rgb(22 39 29 / 11%);
+}
+
+main [data-slot="button"].bg-primary:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+	background-color: #344c40;
+}
+
+main [data-slot="button"].bg-secondary:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible),
+main [data-slot="card"]:has(a[href]):is(:hover, :focus-within) a[data-slot="button"].bg-secondary:is(:hover, :focus-visible) {
+	background-color: #e3ece3;
+	border-color: #cbdacb;
+}
+
+main [data-slot="button"].border-border:not(.bg-secondary):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+	background-color: #eff5ef;
+	border-color: #a8bfad;
+}
+
+.dark main [data-slot="button"].bg-primary:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+	background-color: #c6dcc8;
+}
+
+.dark main [data-slot="button"].bg-secondary:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible),
+.dark main [data-slot="card"]:has(a[href]):is(:hover, :focus-within) a[data-slot="button"].bg-secondary:is(:hover, :focus-visible) {
+	background-color: #34483b;
+	border-color: #607a67;
+}
+
+.dark main [data-slot="button"].border-border:not(.bg-secondary):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible) {
+	background-color: #314139;
+	border-color: #6d8b73;
+}
+
+main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:disabled):not([aria-disabled="true"]):active {
+	transform: translateY(0) scale(.985);
+	box-shadow: 0 1px 3px rgb(22 39 29 / 9%);
+	transition-duration: 90ms;
+}
+
 main [data-slot="card-title"] a {
 	display: block;
 	text-decoration: underline;
@@ -178,5 +224,11 @@ main [data-slot="card-title"] a::after {
 @media (prefers-reduced-motion: reduce) {
 	main [data-slot="card"]:has(a[href]) {
 		transition: none;
+	}
+	main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:disabled):not([aria-disabled="true"]) {
+		transition: none;
+	}
+	main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible, :active) {
+		transform: none;
 	}
 }
