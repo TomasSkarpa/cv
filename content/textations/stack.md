@@ -34,7 +34,7 @@ AWS services · Docker · Coolify · GitHub Actions · Ansible · Bitbucket Pipe
 
 API checks, automated QA, and e2e coverage where releases need it.
 
-Postman · Bruno · Robot Framework · Node.js and Python test automation
+Postman · Bruno · Playwright · Robot Framework · Node.js and Python test automation
 
 ## Side project stack
 

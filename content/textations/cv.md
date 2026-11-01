@@ -80,7 +80,7 @@ Backend & cloud: Node.js · PHP · Laravel · Python · Go · AWS · Docker · A
 
 Commerce & delivery: Salesforce B2C Commerce Cloud · SFCC integrations · DevOps · Scrum
 
-Quality and testing: Postman · Robot Framework · GitHub Actions
+Quality and testing: Postman · Playwright · Robot Framework · GitHub Actions
 
 Full list on Skills; tools and areas on Stack.
 

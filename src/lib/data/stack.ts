@@ -65,7 +65,7 @@ export const stack = {
     {
       title: 'Testing & quality',
       description: 'API checks, automated QA, and **e2e coverage** where releases need it.',
-      items: ['Postman', 'Bruno', 'Robot Framework', 'Node.js and Python test automation'],
+      items: ['Postman', 'Bruno', 'Playwright', 'Robot Framework', 'Node.js and Python test automation'],
     },
   ] satisfies SkillCategory[],
   sideProject: {

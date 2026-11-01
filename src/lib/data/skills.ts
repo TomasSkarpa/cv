@@ -104,7 +104,7 @@ export const skills = {
         'Svelte',
         'Tailwind CSS · Sass · Bootstrap',
         'GitHub Actions · Ansible',
-        'Postman · Robot Framework',
+        'Postman · Playwright · Robot Framework',
         'Scrum · Agile Methodologies',
       ],
     },
