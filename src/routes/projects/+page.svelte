@@ -6,6 +6,7 @@
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import PageTOC from '$lib/components/site/PageTOC.svelte';
 	import ProjectCard from '$lib/components/site/ProjectCard.svelte';
+	import NumberMilestone from '$lib/components/site/NumberMilestone.svelte';
 	import { Badge } from '$lib/components/ui/badge/index.js';
 	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card/index.js';
 	import { ExternalLink } from '@lucide/svelte';
@@ -47,6 +48,7 @@
 
 				<section id="client-delivery" class="scroll-mt-36 space-y-4">
 					<h2 class="text-xl font-semibold">{projects.clientDelivery.title}</h2>
+					<NumberMilestone value={String(projects.clientDelivery.sites.length)} label={projects.clientDelivery.milestoneLabel} detail={projects.clientDelivery.milestoneDetail} />
 					<p class="text-foreground/90"><EmphasisText text={projects.clientDelivery.intro} /></p>
 					<Card class="border-border/80 shadow-none">
 						<CardHeader class="pb-2">

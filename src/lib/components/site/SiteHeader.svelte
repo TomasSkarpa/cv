@@ -13,6 +13,8 @@
 	} from '$lib/components/ui/sheet/index.js';
 	import { Menu, X } from '@lucide/svelte';
 	import './mobile-navigation.css';
+	import './desktop-navigation.css';
+	import { slidingNavigation } from './sliding-navigation';
 
 	let mobileOpen = $state(false);
 
@@ -22,6 +24,7 @@
 	{#each headerNav as item (item.href)}
 		<Button
 			href={item.href}
+			aria-current={isAppPathActive(item.href, $page.url.pathname) ? 'page' : undefined}
 			variant={isAppPathActive(item.href, $page.url.pathname) ? 'secondary' : 'ghost'}
 			size="sm"
 			class={cn('text-sm', buttonClass)}
@@ -44,16 +47,19 @@
 		</a>
 
 		<nav
-			class="relative z-10 ml-auto hidden min-w-0 items-center gap-0.5 md:flex lg:hidden"
+			class="desktop-nav relative z-10 ml-auto hidden min-w-0 items-center gap-0.5 md:flex lg:hidden"
 			aria-label="Primary"
+			use:slidingNavigation
 		>
+			<span class="desktop-nav-highlight" aria-hidden="true"></span>
 			{@render primaryNavLinks()}
 		</nav>
 
 		<div
 			class="pointer-events-none absolute inset-x-0 z-0 hidden h-full items-center justify-center px-4 sm:px-6 lg:flex"
 		>
-			<nav class="pointer-events-auto flex items-center gap-1" aria-label="Primary">
+			<nav class="desktop-nav pointer-events-auto flex items-center gap-1" aria-label="Primary" use:slidingNavigation>
+				<span class="desktop-nav-highlight" aria-hidden="true"></span>
 				{@render primaryNavLinks()}
 			</nav>
 		</div>

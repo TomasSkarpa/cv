@@ -141,8 +141,9 @@ export const projects = {
   },
   clientDelivery: {
     title: 'Client delivery (TAOX s.r.o.)',
-    intro:
-      '**Six sites** shipped during part-time front-end role (May 2022 – Jul 2023). **Laravel, PHP, Bootstrap**.',
+    milestoneLabel: 'Client websites shipped',
+    milestoneDetail: 'TAOX · May 2022 – July 2023',
+    intro: 'Part-time front-end role using **Laravel, PHP, Bootstrap**.',
     summary:
       '**Front-end developer** on agency client work: **Laravel Blade** from design to production, plus legacy **PHP** maintenance. Editorial, hospitality, **B2B services**, and **e-commerce** sites all went live.',
     stack: ['Laravel', 'PHP', 'Bootstrap', 'HTML/CSS', 'jQuery'],

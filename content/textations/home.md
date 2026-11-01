@@ -58,7 +58,9 @@ Geography quiz app. Flags, shapes, hangman. Go backend, Svelte front. Built beca
 
 ## At Baťa, outside the backlog
 
-Children's Program volunteer since 2023. Baťa stand at Zlín Film Festival 2025 and 2026.
+Volunteering since 2023 · Baťa Children’s Program
+
+Children's Program volunteer and event tooling at Baťa public events. Baťa stand at Zlín Film Festival 2025 and 2026.
 
 LOT Conference 2025, Prague: photo booth that turns your face into a 1940s Bata shoemaker figurine. Python, Gemini, QR share, print for attendees.
 

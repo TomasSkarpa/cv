@@ -1,4 +1,4 @@
-import { bataEventsLinks, bataEventsShortSummary } from './bata-events';
+import { bataEventsLinks } from './bata-events';
 import { site } from './site';
 import type { ExploreCard, StartHerePath } from './types';
 
@@ -95,7 +95,11 @@ export const sideProject = {
 
 export const bataEvents = {
   title: 'Baťa events',
-  summary: bataEventsShortSummary,
+  volunteeringSince: '2023',
+  volunteeringLabel: 'Volunteering since',
+  volunteeringDetail: 'Baťa Children’s Program',
+  summary:
+    "**Children's Program volunteer** and **event tooling** at Baťa public events, including Zlín Film Festival and LOT Conference.",
   ...bataEventsLinks,
   cta: { label: 'Volunteering & events', href: bataEventsLinks.volunteeringHref },
 } as const;

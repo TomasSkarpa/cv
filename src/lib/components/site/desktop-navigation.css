@@ -1,0 +1,17 @@
+.desktop-nav { position: relative; isolation: isolate; }
+.desktop-nav-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: .45rem;
+  background: var(--muted);
+  transition: transform 250ms cubic-bezier(.22, 1, .36, 1), width 250ms cubic-bezier(.22, 1, .36, 1), opacity 150ms ease;
+}
+.desktop-nav[data-slide-ready] > a { position: relative; z-index: 1; background: transparent; }
+.desktop-nav[data-slide-ready] > a:hover { background: transparent; }
+@media (prefers-reduced-motion: reduce) { .desktop-nav-highlight { transition: none; } }

@@ -12,6 +12,7 @@
 	import { site } from '$lib/data/site';
 	import { appHref } from '$lib/utils';
 	import PageShell from '$lib/components/site/PageShell.svelte';
+	import NumberMilestone from '$lib/components/site/NumberMilestone.svelte';
 	import ContinueReading from '$lib/components/site/ContinueReading.svelte';
 	import EmphasisText from '$lib/components/site/EmphasisText.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
@@ -24,6 +25,7 @@
 	} from '$lib/components/ui/card/index.js';
 	import { Separator } from '$lib/components/ui/separator/index.js';
 	import { ArrowRight, ExternalLink } from '@lucide/svelte';
+
 </script>
 
 <svelte:head>
@@ -133,6 +135,7 @@
 				<CardTitle>{bataEvents.title}</CardTitle>
 			</CardHeader>
 			<CardContent class="space-y-4 text-sm text-foreground/90">
+				<NumberMilestone value={bataEvents.volunteeringSince} label={bataEvents.volunteeringLabel} detail={bataEvents.volunteeringDetail} divider />
 				<p><EmphasisText text={bataEvents.summary} /></p>
 				<div class="flex flex-wrap gap-2">
 					<Button href={bataEvents.cta.href} variant="secondary" size="sm">{bataEvents.cta.label}</Button>

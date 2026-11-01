@@ -67,6 +67,8 @@ export interface ClientDeliverySite {
 
 export interface ClientDeliveryGroup {
   title: string;
+  milestoneLabel: string;
+  milestoneDetail: string;
   intro: string;
   summary: string;
   stack: string[];
