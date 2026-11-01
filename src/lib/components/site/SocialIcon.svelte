@@ -2,12 +2,15 @@
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import './social-icons.css';
+	import { socialIconMotion } from './social-icon-motion';
 
 	let { name }: { name: string } = $props();
 	let githubHost = $state<HTMLSpanElement>();
+	let svgHost = $state<SVGElement>();
 
 	onMount(() => {
-		if (name !== 'GitHub' || !githubHost) return;
+		if (name !== 'GitHub') return svgHost ? socialIconMotion(svgHost) : undefined;
+		if (!githubHost) return;
 		let active = true;
 		const mount = async () => {
 			try {
@@ -37,7 +40,7 @@
 		</span>
 	</span>
 {:else}
-	<svg class="social-icon social-icon-{name.toLowerCase()}" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<svg bind:this={svgHost} class="social-icon social-icon-{name.toLowerCase()}" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 		{#if name === 'LinkedIn'}
 			<path pathLength="1" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect pathLength="1" width="4" height="12" x="2" y="9"/><circle pathLength="1" cx="4" cy="4" r="2"/>
 		{:else if name === 'Instagram'}
