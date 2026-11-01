@@ -6,6 +6,8 @@ Shipped work with role, context, and outcome. Enterprise work first, followed by
 
 ### Bata AI Brain
 
+Featured
+
 Enterprise · AI platform · Bata
 
 Live: https://ai.batamdc.com/
@@ -20,23 +22,19 @@ Outcome: Shared Brain at ai.batamdc.com for SFCC runbooks, Jira formats, analysi
 
 MCP · REST API · AI tooling · Knowledge catalog · Salesforce B2C Commerce Cloud
 
-### Bata Kenya Website
+### Global CRM migration to Brevo
 
-Featured
+Enterprise · CRM and email · Bata
 
-Enterprise · Presentational SFCC · Bata
+Role: Tech Lead · website and email migration
 
-Live site: https://bata.com/ke
+Context: Migration from Jakala, Caramel CRM, Mailkit, Marigold Campaign and Engage, Netcore, and Woowup CRM to Brevo (Sendinblue) as a unified global solution.
 
-Role: Tech Lead (Software Engineer at time of delivery)
+Contribution: Oversaw and executed the website and email-layer migration, designed the technical solution, and guided delivery.
 
-Context: Bata's new digital platform was built for commerce. Kenya needed a presentational site on the same stack without a full e-commerce rollout.
+Outcome: Website and email migration toward a unified global Brevo solution.
 
-Contribution: Developed the first non-ecommerce website on the platform: content structure, SFCC configuration, and front-end delivery aligned with the global architecture.
-
-Outcome: Proved the platform could serve regional marketing sites, not only storefronts, and established a reusable pattern for similar rollouts.
-
-Salesforce B2C Commerce Cloud · XML · JavaScript
+Brevo · CRM · Website integration · Email · Migration
 
 ### Bata Figurine Generation
 
@@ -53,6 +51,20 @@ Contribution: Built a Python Flask app using Google Gemini AI for image generati
 Outcome: Hands-on conference activity that let participants take home a personalized 1940s shoemaker portrait. Open-sourced on GitHub as batamdc-figurine-generation.
 
 Python · Flask · Google Gemini AI · HTML · QR codes · ImgBB
+
+### Bata Kenya Website
+
+Enterprise · Presentational SFCC · Bata · No longer live
+
+Role: Software Engineer at delivery
+
+Context: Kenya needed a presentational site on Bata’s commerce platform.
+
+Contribution: Built the first non-ecommerce site on the platform, including SFCC configuration and front-end delivery.
+
+Outcome: Established a pattern for regional marketing sites.
+
+Salesforce B2C Commerce Cloud · XML · JavaScript
 
 ## Client delivery (TAOX s.r.o.)
 

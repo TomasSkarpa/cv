@@ -88,6 +88,7 @@ export const projects = {
       {
         slug: 'bata-ai-brain',
         title: 'Bata AI Brain',
+        featured: true,
         category: 'Enterprise commerce',
         subtitle: 'Enterprise · AI platform · Bata',
         liveUrl: 'https://ai.batamdc.com/',
@@ -107,20 +108,18 @@ export const projects = {
         ],
       },
       {
-        slug: 'bata-kenya',
-        title: 'Bata Kenya Website',
-        featured: true,
+        slug: 'global-crm-migration',
+        title: 'Global CRM migration to Brevo',
         category: 'Enterprise commerce',
-        subtitle: 'Enterprise · Presentational SFCC · Bata',
-        liveUrl: 'https://bata.com/ke',
-        role: 'Tech Lead (Software Engineer at time of delivery)',
+        subtitle: 'Enterprise · CRM and email · Bata',
+        role: 'Tech Lead · website and email migration',
         context:
-          "Bata's new digital platform was built for commerce. Kenya needed a **presentational site on the same stack** without a full e-commerce rollout.",
+          'Migration from **Jakala, Caramel CRM, Mailkit, Marigold Campaign and Engage, Netcore, and Woowup CRM** to **Brevo (Sendinblue)** as a unified global solution.',
         contribution:
-          'Developed the **first non-ecommerce website** on the platform: content structure, SFCC configuration, and front-end delivery aligned with the global architecture.',
+          'Oversaw and executed the website and email-layer migration, designed the technical solution, and guided delivery.',
         outcome:
-          'Proved the platform could serve **regional marketing sites**, not only storefronts, and established a reusable pattern for similar rollouts.',
-        tags: ['Salesforce B2C Commerce Cloud', 'XML', 'JavaScript'],
+          'Website and email migration toward a **unified global Brevo solution**.',
+        tags: ['Brevo', 'CRM', 'Website integration', 'Email', 'Migration'],
       },
       {
         slug: 'bata-figurine-generation',
@@ -136,6 +135,17 @@ export const projects = {
         outcome:
           'Hands-on conference activity that let participants take home a **personalized 1940s shoemaker portrait**. Open-sourced on GitHub as batamdc-figurine-generation.',
         tags: ['Python', 'Flask', 'Google Gemini AI', 'HTML', 'QR codes', 'ImgBB'],
+      },
+      {
+        slug: 'bata-kenya',
+        title: 'Bata Kenya Website',
+        category: 'Enterprise commerce',
+        subtitle: 'Enterprise · Presentational SFCC · Bata · No longer live',
+        role: 'Software Engineer at delivery',
+        context: 'Kenya needed a presentational site on Bata’s commerce platform.',
+        contribution: 'Built the first non-ecommerce site on the platform, including SFCC configuration and front-end delivery.',
+        outcome: 'Established a pattern for regional marketing sites.',
+        tags: ['Salesforce B2C Commerce Cloud', 'XML', 'JavaScript'],
       },
     ] satisfies ProjectEntry[],
   },
