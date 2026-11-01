@@ -6,7 +6,7 @@
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import SiteFooter from '$lib/components/site/SiteFooter.svelte';
 	import SiteHeader from '$lib/components/site/SiteHeader.svelte';
-	import { resolve } from '$app/paths';
+	import { base, resolve } from '$app/paths';
 	import { canonicalUrl } from '$lib/seo';
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
@@ -16,9 +16,9 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/favicon.ico" sizes="any" />
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-	<link rel="icon" href="/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+	<link rel="icon" href={`${base}/favicon.ico`} sizes="any" />
+	<link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+	<link rel="icon" href={`${base}/favicon-dark.svg`} type="image/svg+xml" media="(prefers-color-scheme: dark)" />
 	<link rel="canonical" href={canonicalUrl($page.url.pathname)} />
 </svelte:head>
 

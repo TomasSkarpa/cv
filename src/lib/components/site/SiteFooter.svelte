@@ -2,6 +2,7 @@
 	import { footerQuickLinks, footerSocial, site } from '$lib/data/site';
 	import { appHref } from '$lib/utils';
 	import { Separator } from '$lib/components/ui/separator/index.js';
+	import SocialIcon from './SocialIcon.svelte';
 </script>
 
 <footer class="mt-auto border-t border-border/80 bg-muted/30">
@@ -33,8 +34,9 @@
 								href={link.href}
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center rounded-md border border-border bg-card px-3 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+								class="social-link inline-flex min-h-10 items-center gap-2.5 rounded-lg border border-border bg-card px-3 py-2 text-sm text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
 							>
+								<SocialIcon name={link.label} />
 								{link.label}
 							</a>
 						</li>

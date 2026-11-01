@@ -1,0 +1,30 @@
+.social-link .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 1rem; height: 1rem; flex: none; }
+/* Reference icon gestures, adapted to CSS and activated by the whole link. */
+.social-link .social-icon { opacity: .78; }
+.social-link:hover .social-icon,
+.social-link:focus-visible .social-icon { transform: none; opacity: 1; }
+.social-link svg.social-icon :is(path,rect,circle,line) { stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+.social-link:is(:hover,:focus-visible) .social-icon-linkedin { animation: ref-linkedin-scale .45s ease-out; }
+.social-link:is(:hover,:focus-visible) .social-icon-linkedin path { animation: ref-linkedin-main .6s ease-in-out; }
+.social-link:is(:hover,:focus-visible) .social-icon-linkedin :is(rect,circle) { animation: ref-linkedin-detail .45s ease-in-out .12s both; }
+@keyframes ref-linkedin-scale { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+@keyframes ref-linkedin-main { from { stroke-dashoffset: .7; opacity: .6; } to { stroke-dashoffset: 0; opacity: 1; } }
+@keyframes ref-linkedin-detail { from { stroke-dashoffset: 1; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
+.social-link:is(:hover,:focus-visible) .social-icon-instagram { animation: ref-instagram-scale .4s ease-out; }
+.social-link:is(:hover,:focus-visible) .social-icon-instagram rect { animation: ref-instagram-frame .55s ease-in-out; }
+.social-link:is(:hover,:focus-visible) .social-icon-instagram .instagram-lens { transform-box: fill-box; transform-origin: center; animation: ref-instagram-lens .5s ease-out .1s both; }
+.social-link:is(:hover,:focus-visible) .social-icon-instagram line { transform-box: fill-box; transform-origin: center; animation: ref-instagram-dot .35s ease-in-out .2s both; }
+@keyframes ref-instagram-scale { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+@keyframes ref-instagram-frame { from { stroke-dashoffset: .8; opacity: .6; } to { stroke-dashoffset: 0; opacity: 1; } }
+@keyframes ref-instagram-lens { 0% { transform: scale(.85); stroke-dashoffset: 1; } 60% { transform: scale(1.05); } 100% { transform: scale(1); stroke-dashoffset: 0; } }
+@keyframes ref-instagram-dot { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5); opacity: .4; } }
+.social-link:is(:hover,:focus-visible) .social-icon-facebook { animation: ref-facebook-scale .9s ease-out; }
+.social-link:is(:hover,:focus-visible) .social-icon-facebook path { animation: ref-facebook-draw .8s ease-in-out; }
+@keyframes ref-facebook-scale { 0%,100% { transform: scale(1) rotate(0); } 33% { transform: scale(1.15) rotate(-4deg); } 67% { transform: scale(.92) rotate(4deg); } }
+@keyframes ref-facebook-draw { from { stroke-dashoffset: .8; opacity: .4; } to { stroke-dashoffset: 0; opacity: 1; } }
+/* Discord has no counterpart in the reference: a small tilt and eye pulse. */
+.social-link:is(:hover,:focus-visible) .social-icon-discord { animation: discord-hello .65s ease-in-out; }
+.social-link:is(:hover,:focus-visible) .social-icon-discord path:nth-child(-n+2) { transform-box: fill-box; transform-origin: center; animation: discord-eyes .55s ease-in-out .08s; }
+@keyframes discord-hello { 0%, 100% { transform: rotate(0) scale(1); } 30% { transform: rotate(-7deg) scale(1.07); } 65% { transform: rotate(5deg) scale(1.03); } }
+@keyframes discord-eyes { 0%, 100% { transform: scale(1); } 45% { transform: scale(1.35); } }
+@media (prefers-reduced-motion: reduce) { .social-link .social-icon, .social-link .social-icon * { animation: none !important; } }

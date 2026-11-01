@@ -1,0 +1,3 @@
+The local lukas-icons.js bundle was obtained from https://lukas.skarpa.dev/assets/header-T11aj8CK.js.
+It is used to render the original animated GitHub icon requested for this site.
+The Discord outline used in SocialIcon.svelte is from Tabler Icons (MIT license): https://github.com/tabler/tabler-icons
