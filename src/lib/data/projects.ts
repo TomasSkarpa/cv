@@ -108,18 +108,40 @@ export const projects = {
         ],
       },
       {
+        slug: 'bata-bizops',
+        title: 'Bata BizOps',
+        featured: true,
+        category: 'Enterprise commerce',
+        subtitle: 'Enterprise · AI campaign workspace · Bata',
+        liveUrl: 'https://bizops.fa2abata.com/',
+        role: 'Creator · architect · Tech Lead',
+        context:
+          'Campaign operators needed **one shared hostname** with **isolated runtimes** for AI-assisted SFCC campaign work on Development, not ad-hoc local setups.',
+        contribution:
+          'Created and operated the Bata **CloudCLI** fork: architecture, governance, release pipeline, and rollout. Partner delivered **agent skills** and **admin/API integrations** (ecommerce, PIM, CRMs).',
+        outcome:
+          'Live platform at **bizops.fa2abata.com** for safe Page Designer preview and apply workflows, wired to immutable campaign releases.',
+        tags: [
+          'AI tooling',
+          'Salesforce B2C Commerce Cloud',
+          'Campaign operations',
+          'Integrations',
+          'Release automation',
+        ],
+      },
+      {
         slug: 'global-crm-migration',
         title: 'Global CRM migration to Brevo',
         category: 'Enterprise commerce',
         subtitle: 'Enterprise · CRM and email · Bata',
-        role: 'Tech Lead · website and email migration',
+        role: 'Tech Lead · website and email layer',
         context:
           'Migration from **Jakala, Caramel CRM, Mailkit, Marigold Campaign and Engage, Netcore, and Woowup CRM** to **Brevo (Sendinblue)** as a unified global solution.',
         contribution:
-          'Oversaw and executed the website and email-layer migration, designed the technical solution, and guided delivery.',
+          'Oversaw and executed the **storefront and transactional email** layer, designed the technical solution, and guided delivery.',
         outcome:
-          'Website and email migration toward a **unified global Brevo solution**.',
-        tags: ['Brevo', 'CRM', 'Website integration', 'Email', 'Migration'],
+          'Unified global marketing and email platform on Brevo, replacing fragmented regional CRM and campaign tooling.',
+        tags: ['Brevo', 'CRM', 'Email', 'Salesforce B2C Commerce Cloud', 'Migration'],
       },
       {
         slug: 'bata-figurine-generation',
@@ -140,11 +162,14 @@ export const projects = {
         slug: 'bata-kenya',
         title: 'Bata Kenya Website',
         category: 'Enterprise commerce',
-        subtitle: 'Enterprise · Presentational SFCC · Bata · No longer live',
-        role: 'Software Engineer at delivery',
-        context: 'Kenya needed a presentational site on Bata’s commerce platform.',
-        contribution: 'Built the first non-ecommerce site on the platform, including SFCC configuration and front-end delivery.',
-        outcome: 'Established a pattern for regional marketing sites.',
+        subtitle: 'Enterprise · Presentational SFCC · Bata (retired)',
+        role: 'Tech Lead (Software Engineer at time of delivery)',
+        context:
+          'First **non-ecommerce SFCC site** on the global platform: regional marketing without a full storefront rollout.',
+        contribution:
+          'Content structure, SFCC configuration, and front-end delivery aligned with the shared architecture.',
+        outcome:
+          'Established a reusable presentational-site pattern; the Kenya site is **no longer live**.',
         tags: ['Salesforce B2C Commerce Cloud', 'XML', 'JavaScript'],
       },
     ] satisfies ProjectEntry[],
