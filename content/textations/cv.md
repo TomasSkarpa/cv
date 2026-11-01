@@ -2,10 +2,6 @@
 
 Tech Lead · Zlín, Czech Republic
 
-## Summary
-
-Tech Lead at Bata Group in Zlín. I run Salesforce B2C Commerce Cloud delivery: storefronts, integrations, and release practices on the global platform.
-
 Help desk to tech lead in three years at the same company. TAOX and internships before that. Still hands-on, still focused on clear handoffs and docs. Side projects for fun.
 
 ## Experience

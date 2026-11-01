@@ -11,7 +11,6 @@
 	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card/index.js';
 
 	const tocSections = [
-		{ id: 'summary', label: 'Summary' },
 		{ id: 'experience', label: 'Experience' },
 		{ id: 'volunteering', label: 'Volunteering' },
 		{ id: 'certifications', label: 'Certifications' },
@@ -26,17 +25,10 @@
 </svelte:head>
 
 <PageShell>
-	<PageHeader title={cv.title} subtitle={cv.subtitle} />
+	<PageHeader title={cv.title} subtitle={cv.subtitle} lead={cv.lead} />
 	<PageTOC sections={tocSections} />
 
 	<div class="space-y-10">
-		<section id="summary" class="scroll-mt-36 space-y-3">
-			<h2 class="text-xl font-semibold">{cv.summary.title}</h2>
-			{#each cv.summary.paragraphs as paragraph}
-				<p class="leading-relaxed text-foreground/90"><EmphasisText text={paragraph} /></p>
-			{/each}
-		</section>
-
 		<section id="experience" class="scroll-mt-36 space-y-4">
 			<h2 class="text-xl font-semibold">Experience</h2>
 			<div class="space-y-4">

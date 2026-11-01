@@ -68,7 +68,7 @@ Volunteering (linked)
 
 | Page | Sections in PageTOC |
 |------|---------------------|
-| `/cv` | Summary, Experience, Volunteering, Education, Certifications, Core skills, Contact |
+| `/cv` | Experience, Volunteering, Education, Certifications, Core skills, Contact |
 | `/projects` | Enterprise, Client delivery, Side projects |
 | `/professional` | Current focus, Principles, Impact signals, How I work |
 | `/personal` | Values, Interests, Community, Teaching |
