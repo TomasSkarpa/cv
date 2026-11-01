@@ -209,6 +209,55 @@ main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:di
 	transition-duration: 90ms;
 }
 
+/* In-page anchors sweep softly; links to other pages match outline buttons. */
+main nav[aria-label="On this page"] a[href^="#"] {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	transition: background-color 230ms cubic-bezier(.22, 1, .36, 1), border-color 230ms cubic-bezier(.22, 1, .36, 1), color 230ms cubic-bezier(.22, 1, .36, 1);
+}
+
+main nav[aria-label="On this page"] a[href^="#"]::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: #dcebdd;
+	transform: translateY(105%);
+	transition: transform 360ms cubic-bezier(.22, 1, .36, 1);
+}
+
+main nav[aria-label="On this page"] a[href^="#"]:is(:hover, :focus-visible) {
+	background-color: var(--card);
+	border-color: #a8bfad;
+	color: #1c2838;
+}
+
+main nav[aria-label="On this page"] a[href^="#"]:is(:hover, :focus-visible)::before {
+	transform: translateY(0);
+}
+
+main nav[aria-label="Continue reading"] a:not([href^="#"]) {
+	transition: background-color 230ms cubic-bezier(.22, 1, .36, 1), border-color 230ms cubic-bezier(.22, 1, .36, 1), box-shadow 300ms cubic-bezier(.22, 1, .36, 1), transform 380ms cubic-bezier(.34, 1.25, .64, 1);
+}
+
+main nav[aria-label="Continue reading"] a:not([href^="#"]):is(:hover, :focus-visible) {
+	background-color: #eff5ef;
+	border-color: #a8bfad;
+	transform: translateY(-1px);
+	box-shadow: 0 3px 8px rgb(22 39 29 / 11%);
+}
+
+main nav[aria-label="Continue reading"] a:not([href^="#"]):active {
+	transform: translateY(0) scale(.985);
+	box-shadow: 0 1px 3px rgb(22 39 29 / 9%);
+	transition-duration: 90ms;
+}
+
+.dark main nav[aria-label="On this page"] a[href^="#"]::before { background: #34483b; }
+.dark main nav[aria-label="On this page"] a[href^="#"]:is(:hover, :focus-visible) { border-color: #6d8b73; color: var(--foreground); }
+.dark main nav[aria-label="Continue reading"] a:not([href^="#"]):is(:hover, :focus-visible) { background-color: #314139; border-color: #6d8b73; }
+
 main [data-slot="card-title"] a {
 	display: block;
 	text-decoration: underline;
@@ -229,6 +278,14 @@ main [data-slot="card-title"] a::after {
 		transition: none;
 	}
 	main [data-slot="button"]:is(.bg-primary, .bg-secondary, .border-border):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible, :active) {
+		transform: none;
+	}
+	main nav[aria-label="On this page"] a[href^="#"],
+	main nav[aria-label="On this page"] a[href^="#"]::before,
+	main nav[aria-label="Continue reading"] a:not([href^="#"]) {
+		transition: none;
+	}
+	main nav[aria-label="Continue reading"] a:not([href^="#"]):is(:hover, :focus-visible, :active) {
 		transform: none;
 	}
 }
