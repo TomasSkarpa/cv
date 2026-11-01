@@ -6,11 +6,13 @@
 	import {
 		Sheet,
 		SheetContent,
+		SheetClose,
 		SheetHeader,
 		SheetTitle,
 		SheetTrigger,
 	} from '$lib/components/ui/sheet/index.js';
-	import { Menu } from '@lucide/svelte';
+	import { Menu, X } from '@lucide/svelte';
+	import './mobile-navigation.css';
 
 	let mobileOpen = $state(false);
 
@@ -64,7 +66,10 @@
 				>
 					<Menu class="size-4" />
 				</SheetTrigger>
-				<SheetContent side="right" class="w-72">
+				<SheetContent side="right" class="mobile-nav-sheet" showCloseButton={false}>
+					<SheetClose class={cn(buttonVariants({ variant: 'ghost', size: 'icon' }), 'mobile-nav-close')} aria-label="Close navigation menu">
+						<span class="mobile-nav-icon" aria-hidden="true"><Menu class="mobile-nav-menu-icon size-4" /><X class="mobile-nav-close-icon size-4" /></span>
+					</SheetClose>
 					<SheetHeader>
 						<SheetTitle>{site.name}</SheetTitle>
 					</SheetHeader>
