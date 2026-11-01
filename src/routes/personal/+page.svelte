@@ -5,6 +5,7 @@
 	import PageHeader from '$lib/components/site/PageHeader.svelte';
 	import PageShell from '$lib/components/site/PageShell.svelte';
 	import PageTOC from '$lib/components/site/PageTOC.svelte';
+	import SocialIcon from '$lib/components/site/SocialIcon.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { Card, CardContent, CardHeader, CardTitle } from '$lib/components/ui/card/index.js';
 
@@ -123,9 +124,11 @@
 				<p class="text-foreground/90"><EmphasisText text={personal.collaboration.body} /></p>
 				<Button
 					href={personal.collaboration.cta.href}
+					class="social-link"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
+					<SocialIcon name="LinkedIn" />
 					{personal.collaboration.cta.label}
 				</Button>
 			</CardContent>
