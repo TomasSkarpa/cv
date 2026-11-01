@@ -158,6 +158,11 @@ main [data-slot="card"]:has(a[href]):focus-within {
 	border-color: var(--ring);
 }
 
+main [data-slot="card"]:has(a[href]):is(:hover, :focus-within) a[data-slot="button"].bg-secondary {
+	background: var(--card);
+	border-color: var(--border);
+}
+
 main [data-slot="card-title"] a {
 	display: block;
 	text-decoration: underline;
