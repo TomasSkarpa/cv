@@ -1,78 +1,6 @@
 # Projects
 
-Shipped work with role, context, and outcome. Enterprise SFCC first; side projects and TAOX client delivery below.
-
-## Side projects
-
-### OSSA
-
-Commerce reference · https://ecom.skarpa.dev/
-
-Static anatomical footwear house: catalogue, client bag, honest checkout dead-end, interactive store skeleton, and admin ops demo.
-
-Role: Creator · tech lead portfolio showcase
-
-Context: Needed an ownable ecommerce demo that shows storefront craft and systems thinking, not only employer SFCC work.
-
-Contribution: Designed brand + commerce UX, SvelteKit static storefront, Coolify deploy (develop → dev, main → prod), and narrative surfaces at /bones and /admin.
-
-Outcome: Public reference at ecom.skarpa.dev for hiring conversations about commerce engineering and technical leadership.
-
-SvelteKit · TypeScript · Ecommerce · Coolify · Portfolio
-
-### Flagged It
-
-Creator & maintainer · https://flaggedit.app/
-
-Educational web app · Geography · Open source (GPL-3.0)
-
-Live app · GitHub: github.com/TomasSkarpa/flagged-it
-
-Role: Creator, maintainer, full-stack developer
-
-Context: Personal project to learn geography through play. Built for fun and ease of use, with ongoing maintenance and feature work.
-
-Description: Learn countries through fun guessing games. Learn about countries playing different game modes: guessing games, flag recognition, shape identification, hangman, facts, and more.
-
-Contribution: End-to-end product: Go API backend, Svelte frontend, deployment to flaggedit.app, versioning, and open-source maintenance.
-
-Outcome: Public web app with multiple game modes, multilingual support, and active development. Educational tool used to explore geography interactively.
-
-Go · Svelte · Geography · Quiz · Web application
-
-Topics: game, go, golang, web-application, quiz, geography, geography-quiz
-
-### task.skarpa.dev
-
-Personal productivity · https://task.skarpa.dev/
-
-Daily **task** list: one day on the homepage, Jira sync, day close with spillover, history.
-
-Role: Creator
-
-Context: Needed a low-friction daily list that stays honest about one calendar day and picks up unfinished work tomorrow.
-
-Contribution: SvelteKit app, disk-backed day JSON, API skills for sync/close/add, and a homepage built for today only.
-
-Outcome: Personal daily workflow at task.skarpa.dev, wired into Cursor skills and Jira.
-
-SvelteKit · TypeScript · Jira · Personal productivity
-
-### Eventfoto (AI Fotokoutek)
-
-Side business · https://eventfoto.cz/
-
-AI event photo booth · Marketing site, guest kiosk, operator console
-
-Role: Creator · operator · full-stack
-
-Context: Turn a conference figurine booth into a rentable product: guests photographed, AI keeps identity and changes scene, QR to Immich, print at the event.
-
-Contribution: Next.js + Payload CMS, kiosk and operator flows, identity-preserving OpenAI edits, Coolify prod/staging, cookieless Umami analytics.
-
-Outcome: Live at eventfoto.cz with staging on dev-fotokoutek.skarpa.dev; used at public events.
-
-Next.js · Payload CMS · OpenAI · Immich · Coolify · Event tooling
+Shipped work with role, context, and outcome. Enterprise work first, followed by client delivery and side projects.
 
 ## Enterprise commerce
 
@@ -149,6 +77,78 @@ Pilové kotouče — Industrial e-commerce — pilove-kotouce.cz
 Watthouse — Solar energy corporate site — watthouse.cz
 
 Stack: Laravel · PHP · Bootstrap · HTML/CSS · jQuery
+
+## Side projects
+
+### Flagged It
+
+Creator & maintainer · https://flaggedit.app/
+
+Educational web app · Geography · Open source (GPL-3.0)
+
+Live app · GitHub: github.com/TomasSkarpa/flagged-it
+
+Role: Creator, maintainer, full-stack developer
+
+Context: Personal project to learn geography through play. Built for fun and ease of use, with ongoing maintenance and feature work.
+
+Description: Learn countries through fun guessing games. Learn about countries playing different game modes: guessing games, flag recognition, shape identification, hangman, facts, and more.
+
+Contribution: End-to-end product: Go API backend, Svelte frontend, deployment to flaggedit.app, versioning, and open-source maintenance.
+
+Outcome: Public web app with multiple game modes, multilingual support, and active development. Educational tool used to explore geography interactively.
+
+Go · Svelte · Geography · Quiz · Web application
+
+Topics: game, go, golang, web-application, quiz, geography, geography-quiz
+
+### Eventfoto (AI Fotokoutek)
+
+Side business · https://eventfoto.cz/
+
+AI event photo booth · Marketing site, guest kiosk, operator console
+
+Role: Creator · operator · full-stack
+
+Context: Turn a conference figurine booth into a rentable product: guests photographed, AI keeps identity and changes scene, QR to Immich, print at the event.
+
+Contribution: Next.js + Payload CMS, kiosk and operator flows, identity-preserving OpenAI edits, Coolify prod/staging, cookieless Umami analytics.
+
+Outcome: Live at eventfoto.cz with staging on dev-fotokoutek.skarpa.dev; used at public events.
+
+Next.js · Payload CMS · OpenAI · Immich · Coolify · Event tooling
+
+### OSSA
+
+Commerce reference · https://ecom.skarpa.dev/
+
+Static anatomical footwear house: catalogue, client bag, honest checkout dead-end, interactive store skeleton, and admin ops demo.
+
+Role: Creator · tech lead portfolio showcase
+
+Context: Needed an ownable ecommerce demo that shows storefront craft and systems thinking, not only employer SFCC work.
+
+Contribution: Designed brand + commerce UX, SvelteKit static storefront, Coolify deploy (develop → dev, main → prod), and narrative surfaces at /bones and /admin.
+
+Outcome: Public reference at ecom.skarpa.dev for hiring conversations about commerce engineering and technical leadership.
+
+SvelteKit · TypeScript · Ecommerce · Coolify · Portfolio
+
+### task.skarpa.dev
+
+Personal productivity · https://task.skarpa.dev/
+
+Daily **task** list: one day on the homepage, Jira sync, day close with spillover, history.
+
+Role: Creator
+
+Context: Needed a low-friction daily list that stays honest about one calendar day and picks up unfinished work tomorrow.
+
+Contribution: SvelteKit app, disk-backed day JSON, API skills for sync/close/add, and a homepage built for today only.
+
+Outcome: Personal daily workflow at task.skarpa.dev, wired into Cursor skills and Jira.
+
+SvelteKit · TypeScript · Jira · Personal productivity
 
 ## Continue reading
 

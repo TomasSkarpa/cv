@@ -5,28 +5,10 @@ export const projects = {
   metaDescription:
     'Shipped SFCC work, side projects, and client sites with role, context, and outcome.',
   intro:
-    'Shipped work with **role, context, and outcome**. Enterprise SFCC first; side projects and TAOX client delivery below.',
+    'Shipped work with **role, context, and outcome**. Enterprise work first, followed by client delivery and side projects.',
   sideProjects: {
     title: 'Side projects',
     items: [
-      {
-        slug: 'ossa',
-        title: 'OSSA',
-        category: 'Side projects',
-        subtitle: 'Commerce reference · https://ecom.skarpa.dev/',
-        liveUrl: 'https://ecom.skarpa.dev/',
-        githubUrl: 'https://github.com/TomasSkarpa/ecom',
-        role: 'Creator · tech lead portfolio showcase',
-        context:
-          'Needed an **ownable ecommerce demo** that shows storefront craft and **systems thinking**, not only employer SFCC work.',
-        description:
-          'Static anatomical footwear house: catalogue, client bag, honest checkout dead-end, interactive store skeleton, and admin ops demo.',
-        contribution:
-          'Designed brand + commerce UX, SvelteKit static storefront, Coolify deploy (`develop` → dev, `main` → prod), and narrative surfaces at `/bones` and `/admin`.',
-        outcome:
-          'Public reference at **ecom.skarpa.dev** for hiring conversations about commerce engineering and technical leadership.',
-        tags: ['SvelteKit', 'TypeScript', 'Ecommerce', 'Coolify', 'Portfolio'],
-      },
       {
         slug: 'flagged-it',
         title: 'Flagged It',
@@ -47,23 +29,6 @@ export const projects = {
         topics: ['game', 'go', 'golang', 'web-application', 'quiz', 'geography', 'geography-quiz'],
       },
       {
-        slug: 'task-skarpa',
-        title: 'task.skarpa.dev',
-        category: 'Side projects',
-        subtitle: 'Personal productivity · https://task.skarpa.dev/',
-        liveUrl: 'https://task.skarpa.dev/',
-        role: 'Creator',
-        context:
-          'Needed a **low-friction daily list** that stays honest about one calendar day and picks up unfinished work tomorrow.',
-        description:
-          'Daily **task** list: one day on the homepage, Jira sync, day close with spillover, history.',
-        contribution:
-          'SvelteKit app, disk-backed day JSON, API skills for sync/close/add, and a homepage built for **today only**.',
-        outcome:
-          'Personal daily workflow at **task.skarpa.dev**, wired into Cursor skills and Jira.',
-        tags: ['SvelteKit', 'TypeScript', 'Jira', 'Personal productivity'],
-      },
-      {
         slug: 'eventfoto',
         title: 'Eventfoto (AI Fotokoutek)',
         category: 'Side projects',
@@ -79,6 +44,41 @@ export const projects = {
         outcome:
           'Live at **eventfoto.cz** with staging on dev-fotokoutek.skarpa.dev; used at public events.',
         tags: ['Next.js', 'Payload CMS', 'OpenAI', 'Immich', 'Coolify', 'Event tooling'],
+      },
+      {
+        slug: 'ossa',
+        title: 'OSSA',
+        category: 'Side projects',
+        subtitle: 'Commerce reference · https://ecom.skarpa.dev/',
+        liveUrl: 'https://ecom.skarpa.dev/',
+        githubUrl: 'https://github.com/TomasSkarpa/ecom',
+        role: 'Creator · tech lead portfolio showcase',
+        context:
+          'Needed an **ownable ecommerce demo** that shows storefront craft and **systems thinking**, not only employer SFCC work.',
+        description:
+          'Static anatomical footwear house: catalogue, client bag, honest checkout dead-end, interactive store skeleton, and admin ops demo.',
+        contribution:
+          'Designed brand + commerce UX, SvelteKit static storefront, Coolify deploy (`develop` → dev, `main` → prod), and narrative surfaces at `/bones` and `/admin`.',
+        outcome:
+          'Public reference at **ecom.skarpa.dev** for hiring conversations about commerce engineering and technical leadership.',
+        tags: ['SvelteKit', 'TypeScript', 'Ecommerce', 'Coolify', 'Portfolio'],
+      },
+      {
+        slug: 'task-skarpa',
+        title: 'task.skarpa.dev',
+        category: 'Side projects',
+        subtitle: 'Personal productivity · https://task.skarpa.dev/',
+        liveUrl: 'https://task.skarpa.dev/',
+        role: 'Creator',
+        context:
+          'Needed a **low-friction daily list** that stays honest about one calendar day and picks up unfinished work tomorrow.',
+        description:
+          'Daily **task** list: one day on the homepage, Jira sync, day close with spillover, history.',
+        contribution:
+          'SvelteKit app, disk-backed day JSON, API skills for sync/close/add, and a homepage built for **today only**.',
+        outcome:
+          'Personal daily workflow at **task.skarpa.dev**, wired into Cursor skills and Jira.',
+        tags: ['SvelteKit', 'TypeScript', 'Jira', 'Personal productivity'],
       },
     ] satisfies ProjectEntry[],
   },

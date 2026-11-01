@@ -12,9 +12,9 @@
 	import { ExternalLink } from '@lucide/svelte';
 
 	const tocSections = [
-		{ id: 'side-projects', label: 'Side projects' },
 		{ id: 'enterprise', label: 'Enterprise' },
 		{ id: 'client-delivery', label: 'Client delivery' },
+		{ id: 'side-projects', label: 'Side projects' },
 	];
 </script>
 
@@ -28,15 +28,6 @@
 	<PageTOC sections={tocSections} />
 
 	<div class="space-y-12">
-				<section id="side-projects" class="scroll-mt-36 space-y-4">
-					<h2 class="text-xl font-semibold">{projects.sideProjects.title}</h2>
-					<div class="grid gap-4">
-						{#each projects.sideProjects.items as project (project.title)}
-							<ProjectCard {project} />
-						{/each}
-					</div>
-				</section>
-
 				<section id="enterprise" class="scroll-mt-36 space-y-4">
 					<h2 class="text-xl font-semibold">{projects.enterprise.title}</h2>
 					<div class="grid gap-4">
@@ -87,6 +78,15 @@
 							</div>
 						</CardContent>
 					</Card>
+				</section>
+
+				<section id="side-projects" class="scroll-mt-36 space-y-4">
+					<h2 class="text-xl font-semibold">{projects.sideProjects.title}</h2>
+					<div class="grid gap-4">
+						{#each projects.sideProjects.items as project (project.title)}
+							<ProjectCard {project} />
+						{/each}
+					</div>
 				</section>
 			</div>
 
